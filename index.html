@@ -1,0 +1,2857 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwarden - Cloud environment inspector</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="navbar-wrapper">
+        <div class="navbar-content">
+          <div class="page-padding nav">
+            <div class="container navbar-container">
+              <a href="#" class="navbar-logo set-opacity">
+                <img
+                  src="https://assets-global.website-files.com/65167b57095188b34c3dac91/6516a8a9e7363b3fde38151a_Frame.svg"
+                  alt=""
+                />
+              </a>
+              <div class="navbar-center">
+                <nav class="navbar-main-content hidden">
+                  <div class="drop-down-content products">
+                    <div>Products</div>
+                    <div class="arrow-icon icon-pro">
+                      <svg
+                        width="auto"
+                        height="auto"
+                        viewBox="0 0 21 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.791 7.50391L10.791 12.5039L5.79102 7.50391"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="dropdown-box dropdown-products">
+                      <div class="drop-box">
+                        <div class="box">
+                          <div class="left">
+                            <img
+                              src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651b8ec5c78416c9cdd11d17_Frame%20625938.webp"
+                              loading="lazy"
+                              class="tailwarden-logo"
+                            />
+                          </div>
+                          <div class="right">
+                            <div class="heading">Tailwardan</div>
+                            <div class="text-all">
+                              Cloud environment inspector
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box non-active">
+                          <div class="left">
+                            <img
+                              src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651b8ec54e33d016c1700144_Frame%20625938%20(1).webp"
+                              loading="lazy"
+                              class="tailwarden-logo"
+                            />
+                          </div>
+                          <div class="right">
+                            <div class="heading">Komiser</div>
+                            <div class="text-all">
+                              Open source environment inspector
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="drop-down-content resources">
+                    <div>Resources</div>
+                    <div class="arrow-icon icon-res">
+                      <svg
+                        width="auto"
+                        height="auto"
+                        viewBox="0 0 21 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <!-- <polyline points="1 8, 8 15, 15 8" stroke="currentColor" strokewidth="1.25" stroke-linecap="round" stroke-linejoin="round"></polyline>  -->
+                        <path
+                          d="M15.791 7.50391L10.791 12.5039L5.79102 7.50391"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                    <!-- hidden -->
+                    <div class="dropdown-box dropdown-resources">
+                      <div class="drop-box">
+                        <!-- Changelog -->
+                        <div class="box box-res">
+                          <div class="left left-res">
+                            <svg
+                              width="20"
+                              height="21"
+                              viewBox="0 0 20 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M8.61703 13.2037C8.04294 13.1542 7.46192 13.1289 6.875 13.1289H6.25C4.17893 13.1289 2.5 11.45 2.5 9.37891C2.5 7.30784 4.17893 5.62891 6.25 5.62891H6.875C7.46192 5.62891 8.04294 5.60362 8.61703 5.55409M8.61703 13.2037C8.82774 14.0051 9.1031 14.7803 9.43719 15.5234C9.64341 15.9821 9.48685 16.5312 9.05134 16.7826L8.50441 17.0984C8.04492 17.3637 7.45466 17.1961 7.23201 16.7145C6.70983 15.585 6.30451 14.3905 6.03155 13.1464M8.61703 13.2037C8.29598 11.9827 8.125 10.7007 8.125 9.37891C8.125 8.05706 8.29598 6.77515 8.61703 5.55409M8.61703 13.2037C11.25 13.4309 13.737 14.1682 15.9789 15.3163M8.61703 5.55409C11.25 5.32691 13.737 4.5896 15.9789 3.44148M15.9789 3.44148C15.8808 3.12553 15.7751 2.81293 15.662 2.50391M15.9789 3.44148C16.4247 4.87747 16.7131 6.38276 16.8238 7.93717M15.9789 15.3163C15.8808 15.6323 15.7751 15.9449 15.662 16.2539M15.9789 15.3163C16.4247 13.8803 16.7131 12.3751 16.8238 10.8206M16.8238 7.93717C17.237 8.2811 17.5 8.79929 17.5 9.37891C17.5 9.95852 17.237 10.4767 16.8238 10.8206M16.8238 7.93717C16.8578 8.41333 16.875 8.8941 16.875 9.37891C16.875 9.86371 16.8578 10.3445 16.8238 10.8206"
+                                stroke="currentColor"
+                                stroke-opacity="1"
+                                stroke-width="1.25"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                          </div>
+                          <div class="right">
+                            <div>Changelog</div>
+                          </div>
+                        </div>
+                        <!-- Roadmap -->
+                        <div class="box box-res">
+                          <div class="left left-res">
+                            <svg
+                              width="20"
+                              height="21"
+                              viewBox="0 0 20 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M12.5 14.3792V7.50421M7.5 12.5042L7.5 5.62921M7.08074 2.71384L3.01824 4.74509C2.70063 4.9039 2.5 5.22852 2.5 5.58362L2.5 15.9873C2.5 16.6842 3.23342 17.1375 3.85676 16.8258L7.08074 15.2138C7.34467 15.0819 7.65533 15.0819 7.91926 15.2138L12.0807 17.2946C12.3447 17.4265 12.6553 17.4265 12.9193 17.2946L16.9818 15.2633C17.2994 15.1045 17.5 14.7799 17.5 14.4248V4.02112C17.5 3.3242 16.7666 2.87092 16.1432 3.18259L12.9193 4.79458C12.6553 4.92655 12.3447 4.92655 12.0807 4.79458L7.91926 2.71384C7.65533 2.58188 7.34467 2.58188 7.08074 2.71384Z"
+                                stroke="currentColor"
+                                stroke-opacity="1"
+                                stroke-width="1.25"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                          </div>
+                          <div class="right">
+                            <div>Roadmap</div>
+                          </div>
+                        </div>
+                        <!-- Community -->
+                        <div class="box box-res">
+                          <div class="left left-res">
+                            <svg
+                              width="20"
+                              height="21"
+                              viewBox="0 0 20 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M12.5 15.9435C13.1941 16.1456 13.9281 16.2539 14.6875 16.2539C15.9198 16.2539 17.0854 15.9686 18.122 15.4604C18.124 15.4127 18.125 15.3646 18.125 15.3164C18.125 13.4179 16.5859 11.8789 14.6875 11.8789C13.5058 11.8789 12.4633 12.4752 11.8446 13.3832M12.5 15.9435V15.9414C12.5 15.014 12.2624 14.1421 11.8446 13.3832M12.5 15.9435C12.5 15.9732 12.4997 16.0029 12.4992 16.0325C10.9478 16.9666 9.1304 17.5039 7.1875 17.5039C5.2446 17.5039 3.4272 16.9666 1.87577 16.0325C1.87526 16.0022 1.875 15.9718 1.875 15.9414C1.875 13.0074 4.25349 10.6289 7.1875 10.6289C9.1941 10.6289 10.9409 11.7414 11.8446 13.3832M10 5.31641C10 6.86971 8.7408 8.12891 7.1875 8.12891C5.6342 8.12891 4.375 6.86971 4.375 5.31641C4.375 3.76311 5.6342 2.50391 7.1875 2.50391C8.7408 2.50391 10 3.76311 10 5.31641ZM16.875 7.19141C16.875 8.39953 15.8956 9.37891 14.6875 9.37891C13.4794 9.37891 12.5 8.39953 12.5 7.19141C12.5 5.98328 13.4794 5.00391 14.6875 5.00391C15.8956 5.00391 16.875 5.98328 16.875 7.19141Z"
+                                stroke="currentColor"
+                                stroke-opacity="1"
+                                stroke-width="1.25"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                          </div>
+                          <div class="right">
+                            <div>Community</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="nav-link is-last set-opacity">Prices</a>
+                  <a href="#" class="nav-link is-last set-opacity">Blog</a>
+                  <div class="content">
+                    <div class="github-button margin-right-24 w-inline-block">
+                      <a href="#" class="content-alignment set-opacity">
+                        <div class="github-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_275_41637)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9696 2C6.34153 2 1.79175 6.58332 1.79175 12.2535C1.79175 16.786 4.70695 20.6227 8.75111 21.9806C9.25673 22.0827 9.44194 21.76 9.44194 21.4885C9.44194 21.2508 9.42527 20.436 9.42527 19.587C6.59403 20.1983 6.00445 18.3648 6.00445 18.3648C5.54945 17.1764 4.87528 16.871 4.87528 16.871C3.94862 16.2429 4.94278 16.2429 4.94278 16.2429C5.9707 16.3108 6.51007 17.2954 6.51007 17.2954C7.41986 18.857 8.8859 18.4158 9.47569 18.1441C9.55986 17.4821 9.82965 17.0237 10.1161 16.7691C7.85799 16.5314 5.48216 15.6487 5.48216 11.7102C5.48216 10.5898 5.88632 9.67311 6.52674 8.96019C6.4257 8.70561 6.07174 7.65291 6.62799 6.24395C6.62799 6.24395 7.48736 5.97228 9.42506 7.29645C10.2547 7.072 11.1102 6.95783 11.9696 6.95686C12.829 6.95686 13.7051 7.07582 14.514 7.29645C16.4519 5.97228 17.3113 6.24395 17.3113 6.24395C17.8675 7.65291 17.5134 8.70561 17.4123 8.96019C18.0696 9.67311 18.4571 10.5898 18.4571 11.7102C18.4571 15.6487 16.0813 16.5143 13.8063 16.7691C14.1771 17.0916 14.4971 17.7027 14.4971 18.6704C14.4971 20.0454 14.4805 21.1489 14.4805 21.4883C14.4805 21.76 14.6659 22.0827 15.1713 21.9808C19.2155 20.6225 22.1307 16.786 22.1307 12.2535C22.1473 6.58332 17.5809 2 11.9696 2Z" fill="white"></path>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_275_41637">
+                            <rect width="20.4166" height="20" fill="white" transform="translate(1.79175 2)"></rect>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </div>
+                        <div class="star-us">Star us</div>
+                        <div class="github-button-badge badge">3.6k</div>
+                      </a>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <div class="navbar-right">
+                <div class="content margin-right-18 hidden">
+                  <a href="#" class="set-opacity">
+                    <div class="signin">Sign in</div>
+                  </a>
+                </div>
+                <div class="content hidden">
+                  <div class="button request-btn ">
+                    <div class="nav-req">Request access</div>
+                  </div>
+                </div>
+                <div class="nav-right-icon">
+                  <div class="icon-line rotate-down"></div>
+                  <div class="icon-line rotate-up"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-overlay hidden">
+            <nav class="navbar-main-content start">
+              <div class="navbar-large-btn">
+                <div class="center">
+                  <div class="drop-down-content products start">
+                    <div>Products</div>
+                    <div class="arrow-icon icon-pro">
+                      <svg
+                        width="auto"
+                        height="auto"
+                        viewBox="0 0 21 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.791 7.50391L10.791 12.5039L5.79102 7.50391"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-box dropdown-products p-relative">
+                  <div class="drop-box">
+                    <div class="box">
+                      <div class="left">
+                        <img
+                          src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651b8ec5c78416c9cdd11d17_Frame%20625938.webp"
+                          loading="lazy"
+                          class="tailwarden-logo"
+                        />
+                      </div>
+                      <div class="right">
+                        <div class="heading">Tailwardan</div>
+                        <div class="text-all">
+                          Cloud environment inspector
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box non-active">
+                      <div class="left">
+                        <img
+                          src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651b8ec54e33d016c1700144_Frame%20625938%20(1).webp"
+                          loading="lazy"
+                          class="tailwarden-logo"
+                        />
+                      </div>
+                      <div class="right">
+                        <div class="heading">Komiser</div>
+                        <div class="text-all">
+                          Open source environment inspector
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="navbar-large-btn">
+                <div class="center">
+                  <div class="drop-down-content resources start">
+                    <div>Resources</div>
+                    <div class="arrow-icon icon-res">
+                      <svg
+                        width="auto"
+                        height="auto"
+                        viewBox="0 0 21 21"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <!-- <polyline points="1 8, 8 15, 15 8" stroke="currentColor" strokewidth="1.25" stroke-linecap="round" stroke-linejoin="round"></polyline>  -->
+                        <path
+                          d="M15.791 7.50391L10.791 12.5039L5.79102 7.50391"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-box dropdown-resources p-relative">
+                  <div class="drop-box">
+                    <!-- Changelog -->
+                    <div class="box box-res">
+                      <div class="left left-res">
+                        <svg
+                          width="20"
+                          height="21"
+                          viewBox="0 0 20 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8.61703 13.2037C8.04294 13.1542 7.46192 13.1289 6.875 13.1289H6.25C4.17893 13.1289 2.5 11.45 2.5 9.37891C2.5 7.30784 4.17893 5.62891 6.25 5.62891H6.875C7.46192 5.62891 8.04294 5.60362 8.61703 5.55409M8.61703 13.2037C8.82774 14.0051 9.1031 14.7803 9.43719 15.5234C9.64341 15.9821 9.48685 16.5312 9.05134 16.7826L8.50441 17.0984C8.04492 17.3637 7.45466 17.1961 7.23201 16.7145C6.70983 15.585 6.30451 14.3905 6.03155 13.1464M8.61703 13.2037C8.29598 11.9827 8.125 10.7007 8.125 9.37891C8.125 8.05706 8.29598 6.77515 8.61703 5.55409M8.61703 13.2037C11.25 13.4309 13.737 14.1682 15.9789 15.3163M8.61703 5.55409C11.25 5.32691 13.737 4.5896 15.9789 3.44148M15.9789 3.44148C15.8808 3.12553 15.7751 2.81293 15.662 2.50391M15.9789 3.44148C16.4247 4.87747 16.7131 6.38276 16.8238 7.93717M15.9789 15.3163C15.8808 15.6323 15.7751 15.9449 15.662 16.2539M15.9789 15.3163C16.4247 13.8803 16.7131 12.3751 16.8238 10.8206M16.8238 7.93717C17.237 8.2811 17.5 8.79929 17.5 9.37891C17.5 9.95852 17.237 10.4767 16.8238 10.8206M16.8238 7.93717C16.8578 8.41333 16.875 8.8941 16.875 9.37891C16.875 9.86371 16.8578 10.3445 16.8238 10.8206"
+                            stroke="currentColor"
+                            stroke-opacity="1"
+                            stroke-width="1.25"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="right">
+                        <div>Changelog</div>
+                      </div>
+                    </div>
+                    <!-- Roadmap -->
+                    <div class="box box-res">
+                      <div class="left left-res">
+                        <svg
+                          width="20"
+                          height="21"
+                          viewBox="0 0 20 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12.5 14.3792V7.50421M7.5 12.5042L7.5 5.62921M7.08074 2.71384L3.01824 4.74509C2.70063 4.9039 2.5 5.22852 2.5 5.58362L2.5 15.9873C2.5 16.6842 3.23342 17.1375 3.85676 16.8258L7.08074 15.2138C7.34467 15.0819 7.65533 15.0819 7.91926 15.2138L12.0807 17.2946C12.3447 17.4265 12.6553 17.4265 12.9193 17.2946L16.9818 15.2633C17.2994 15.1045 17.5 14.7799 17.5 14.4248V4.02112C17.5 3.3242 16.7666 2.87092 16.1432 3.18259L12.9193 4.79458C12.6553 4.92655 12.3447 4.92655 12.0807 4.79458L7.91926 2.71384C7.65533 2.58188 7.34467 2.58188 7.08074 2.71384Z"
+                            stroke="currentColor"
+                            stroke-opacity="1"
+                            stroke-width="1.25"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="right">
+                        <div>Roadmap</div>
+                      </div>
+                    </div>
+                    <!-- Community -->
+                    <div class="box box-res">
+                      <div class="left left-res">
+                        <svg
+                          width="20"
+                          height="21"
+                          viewBox="0 0 20 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12.5 15.9435C13.1941 16.1456 13.9281 16.2539 14.6875 16.2539C15.9198 16.2539 17.0854 15.9686 18.122 15.4604C18.124 15.4127 18.125 15.3646 18.125 15.3164C18.125 13.4179 16.5859 11.8789 14.6875 11.8789C13.5058 11.8789 12.4633 12.4752 11.8446 13.3832M12.5 15.9435V15.9414C12.5 15.014 12.2624 14.1421 11.8446 13.3832M12.5 15.9435C12.5 15.9732 12.4997 16.0029 12.4992 16.0325C10.9478 16.9666 9.1304 17.5039 7.1875 17.5039C5.2446 17.5039 3.4272 16.9666 1.87577 16.0325C1.87526 16.0022 1.875 15.9718 1.875 15.9414C1.875 13.0074 4.25349 10.6289 7.1875 10.6289C9.1941 10.6289 10.9409 11.7414 11.8446 13.3832M10 5.31641C10 6.86971 8.7408 8.12891 7.1875 8.12891C5.6342 8.12891 4.375 6.86971 4.375 5.31641C4.375 3.76311 5.6342 2.50391 7.1875 2.50391C8.7408 2.50391 10 3.76311 10 5.31641ZM16.875 7.19141C16.875 8.39953 15.8956 9.37891 14.6875 9.37891C13.4794 9.37891 12.5 8.39953 12.5 7.19141C12.5 5.98328 13.4794 5.00391 14.6875 5.00391C15.8956 5.00391 16.875 5.98328 16.875 7.19141Z"
+                            stroke="currentColor"
+                            stroke-opacity="1"
+                            stroke-width="1.25"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="right">
+                        <div>Community</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="nav-link is-last set-opacity">Prices</a>
+              <a href="#" class="nav-link is-last set-opacity blog">Blog</a>
+            </nav>
+          </div>
+        </div>  
+      </header>
+      <main class="main-wrapper">
+        <section class="section section-hero">
+          <div class="section-spacing section-hero">
+            <div class="page-padding">
+              <div class="container">
+                <div class="hero-content">
+                  <div class="top-content margin-bottom-24">
+                    <a href="#" class="text-label">
+                      <div class="badge">New</div>
+                      <div class="text-arrow-icon">
+                        <div class="big-screen">Komiser is live on ProductHunt!</div>
+                        <div class="mobile-screen">Komiser is live</div>
+                        <div class="arrow-icon">
+                          <svg
+                            width="auto"
+                            height="auto"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.5 5.00391L12.5 10.0039L7.5 15.0039"
+                              stroke="currentColor"
+                              stroke-width="1.25"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="center-content margin-bottom-32">
+                    <div class="margin-bottom-24">
+                      <h1>Stop wasting money on your cloud infrastructure.</h1>
+                    </div>
+                    <div>
+                      <p class="content-text content-text-para">
+                        Tailwarden is your all-in-one platform built on
+                        open-source. Seamlessly build your cloud asset inventory
+                        and gain detailed insights by breaking down costs at the
+                        resource level.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="bottom-content content-alignment">
+                    <div class="button request-btn btn-color">
+                      <div>Request access</div>
+                    </div>
+                    <a href="#" class="text-label">
+                      <div class="text-arrow-icon">
+                        <div>Try live demo</div>
+                        <div class="arrow-icon">
+                          <svg
+                            width="auto"
+                            height="auto"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.5 5.00391L12.5 10.0039L7.5 15.0039"
+                              stroke="currentColor"
+                              stroke-width="1.25"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <img
+                  class="hero-image shadow"
+                  src="https://assets-global.website-files.com/65167b57095188b34c3dac91/652920c5f09f26a0344c73ee_Dashboard-min.webp"
+                  sizes="(max-width: 479px) 100vw, (max-width: 1919px) 94vw, 1026px"
+                  width="1026"
+                  srcset="
+                    https://assets-global.website-files.com/65167b57095188b34c3dac91/652920c5f09f26a0344c73ee_Dashboard-min-p-500.webp   500w,
+                    https://assets-global.website-files.com/65167b57095188b34c3dac91/652920c5f09f26a0344c73ee_Dashboard-min-p-800.webp   800w,
+                    https://assets-global.website-files.com/65167b57095188b34c3dac91/652920c5f09f26a0344c73ee_Dashboard-min-p-1080.webp 1080w,
+                    https://assets-global.website-files.com/65167b57095188b34c3dac91/652920c5f09f26a0344c73ee_Dashboard-min-p-1600.webp 1600w,
+                    https://assets-global.website-files.com/65167b57095188b34c3dac91/652920c5f09f26a0344c73ee_Dashboard-min-p-2000.webp 2000w,
+                    https://assets-global.website-files.com/65167b57095188b34c3dac91/652920c5f09f26a0344c73ee_Dashboard-min.webp        2052w
+                  "
+                />
+                <div class="hero-brands">
+                  <div class="margin-bottom-32">
+                    <div class="text-size-large is-center">
+                      Loved by next-generation teams
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="overflow-hidden logos">
+              <div class="marquee">
+                <div class="infinite-slide-wrap" style="overflow: hidden">
+                  <div class="marquee-track-brand">
+                    <div
+                      class="marquee-track"
+                      style="flex: 0 0 auto; display: block"
+                    >
+                      <div class="marquee-track-inner is-alt">
+                        <div class="marquee-brand">
+                          <img
+                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651baa576e86b996799e8e96_Frame%20(4).svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="marquee-brand">
+                          <img
+                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651baa576e86b996799e8e91_qonto-2022%201.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="marquee-brand">
+                          <img
+                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651baa5700e9acaaa4119ddc_wttj%201.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="marquee-brand">
+                          <img
+                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651baa56ecfa9b8a021d5b72_logo%201.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="marquee-track"
+                      style="flex: 0 0 auto; display: block"
+                    >
+                      <div class="marquee-track-inner is-alt">
+                        <div class="marquee-brand">
+                          <img
+                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651baa576e86b996799e8e96_Frame%20(4).svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="marquee-brand">
+                          <img
+                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651baa576e86b996799e8e91_qonto-2022%201.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="marquee-brand">
+                          <img
+                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651baa5700e9acaaa4119ddc_wttj%201.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="marquee-brand">
+                          <img
+                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651baa56ecfa9b8a021d5b72_logo%201.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="marquee-track"
+                      style="flex: 0 0 auto; display: block"
+                    >
+                      <div class="marquee-track-inner is-alt">
+                        <div class="marquee-brand">
+                          <img
+                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651baa576e86b996799e8e96_Frame%20(4).svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="marquee-brand">
+                          <img
+                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651baa576e86b996799e8e91_qonto-2022%201.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="marquee-brand">
+                          <img
+                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651baa5700e9acaaa4119ddc_wttj%201.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="marquee-brand">
+                          <img
+                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651baa56ecfa9b8a021d5b72_logo%201.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="marquee-track infinite-clone"></div>
+                    <div class="marquee-track infinite-clone"></div>
+                  </div>
+                </div>
+                <div class="marquee-brand-gradient is-left"></div>
+                <div class="marquee-brand-gradient is-right"></div>
+                <div class="logos-mobile-view">
+                  <div class="marquee-brand">
+                    <img
+                      src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651baa576e86b996799e8e96_Frame%20(4).svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="marquee-brand">
+                    <img
+                      src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651baa576e86b996799e8e91_qonto-2022%201.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="marquee-brand">
+                    <img
+                      src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651baa5700e9acaaa4119ddc_wttj%201.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="marquee-brand">
+                    <img
+                      src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651baa56ecfa9b8a021d5b72_logo%201.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="section-spacing tailwarden-intro">
+            <div class="page-padding">
+              <div class="container">
+                <div class="max-width-672">
+                  <div class="intro-text">
+                    <div class="margin-bottom-16">
+                      <div class="margin-bottom-16">
+                        <div class="color-heading-top">
+                          Introducing Tailwarden
+                        </div>
+                      </div>
+                      <h2 class="heading-top-main">
+                        A new way to uncover your costs
+                      </h2>
+                    </div>
+                    <div class="text-size-large">
+                      Tailwarden is an all-in-one tool that allows you to build
+                      your cloud assets inventory across all your cloud
+                      infrastructure in order to provide visibility into your
+                      costs and assist you in making informed decisions.
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-intro">
+                  <div class="apps-img">
+                    <img
+                      src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bb6d84d6195a65d6bfafe_Illustration%20(1).webp"
+                      sizes="(max-width: 479px) 100vw, (max-width: 767px) 90vw, 100vw"
+                      width="640"
+                      srcset="
+                        https://assets-global.website-files.com/65167b57095188b34c3dac91/651bb6d84d6195a65d6bfafe_Illustration%20(1)-p-500.png   500w,
+                        https://assets-global.website-files.com/65167b57095188b34c3dac91/651bb6d84d6195a65d6bfafe_Illustration%20(1)-p-800.png   800w,
+                        https://assets-global.website-files.com/65167b57095188b34c3dac91/651bb6d84d6195a65d6bfafe_Illustration%20(1)-p-1080.png 1080w,
+                        https://assets-global.website-files.com/65167b57095188b34c3dac91/651bb6d84d6195a65d6bfafe_Illustration%20(1).webp       1280w
+                      "
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="grid-text">
+                    <div class="margin-bottom-32">
+                      <h3 class="grid-text-heading is-black margin-bottom-12">
+                        Build your cloud assets inventory
+                      </h3>
+                      <div class="text-size-large">
+                        Dive deep into the intricate layers of your cloud. Know
+                        what you have, where it's located, and how it's tagged.
+                      </div>
+                    </div>
+                    <a href="#" class="text-label is-black">
+                      <div class="text-arrow-icon">
+                        <div>Request access</div>
+                        <div class="arrow-icon">
+                          <svg
+                            width="auto"
+                            height="auto"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.5 5.00391L12.5 10.0039L7.5 15.0039"
+                              stroke="currentColor"
+                              stroke-width="1.25"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="padding-top-128"></div>
+                <div class="grid-intro">
+                  <div class="grid-text">
+                    <div class="margin-bottom-32">
+                      <h3 class="grid-text-heading is-black margin-bottom-12">
+                        Track cost at the cloud resource level
+                      </h3>
+                      <div class="text-size-large">
+                        With a complete inventory, eliminate wasteful spending.
+                        Only pay for what you use and understand where your
+                        budget is being allocated.
+                      </div>
+                    </div>
+                    <a href="#" class="text-label is-black">
+                      <div class="text-arrow-icon">
+                        <div>Request access</div>
+                        <div class="arrow-icon">
+                          <svg
+                            width="auto"
+                            height="auto"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.5 5.00391L12.5 10.0039L7.5 15.0039"
+                              stroke="currentColor"
+                              stroke-width="1.25"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="apps-img  reverse">
+                    <img
+                      src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bb6d8d055d6e894d6ae16_Illustration%20(2).webp"
+                      sizes="(max-width: 479px) 100vw, (max-width: 767px) 90vw, 100vw"
+                      width="640"
+                      srcset="
+                        https://assets-global.website-files.com/65167b57095188b34c3dac91/651bb6d8d055d6e894d6ae16_Illustration%20(2)-p-500.webp  500w,
+                        https://assets-global.website-files.com/65167b57095188b34c3dac91/651bb6d8d055d6e894d6ae16_Illustration%20(2)-p-800.png   800w,
+                        https://assets-global.website-files.com/65167b57095188b34c3dac91/651bb6d8d055d6e894d6ae16_Illustration%20(2)-p-1080.png 1080w,
+                        https://assets-global.website-files.com/65167b57095188b34c3dac91/651bb6d8d055d6e894d6ae16_Illustration%20(2).webp       1280w
+                      "
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div class="padding-top-128"></div>
+                <div class="grid-intro">
+                  <div class="apps-img">
+                    <img
+                      src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bb6d87db4f38d10e398ab_Illustration%20(3).webp"
+                      sizes="(max-width: 479px) 100vw, (max-width: 767px) 90vw, 100vw"
+                      width="640"
+                      srcset="
+                        https://assets-global.website-files.com/65167b57095188b34c3dac91/651bb6d87db4f38d10e398ab_Illustration%20(3)-p-500.webp   500w,
+                        https://assets-global.website-files.com/65167b57095188b34c3dac91/651bb6d87db4f38d10e398ab_Illustration%20(3)-p-800.webp   800w,
+                        https://assets-global.website-files.com/65167b57095188b34c3dac91/651bb6d87db4f38d10e398ab_Illustration%20(3)-p-1080.webp 1080w,
+                        https://assets-global.website-files.com/65167b57095188b34c3dac91/651bb6d87db4f38d10e398ab_Illustration%20(3).webp        1280w
+                      "
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="grid-text">
+                    <div class="margin-bottom-32">
+                      <h3 class="grid-text-heading is-black margin-bottom-12">
+                        Bring accountability to cloud spend
+                      </h3>
+                      <div class="text-size-large">
+                        Keep a tab on each team's cloud usage. Whether it's
+                        DevOps or Marketing, know who's using what and how it
+                        affects your bottom line.
+                      </div>
+                    </div>
+                    <a href="#" class="text-label is-black">
+                      <div class="text-arrow-icon">
+                        <div>Request access</div>
+                        <div class="arrow-icon">
+                          <svg
+                            width="auto"
+                            height="auto"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.5 5.00391L12.5 10.0039L7.5 15.0039"
+                              stroke="currentColor"
+                              stroke-width="1.25"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="section-spacing section-all-in-one">
+            <div class="page-padding">
+              <div class="container">
+                <div class="max-width-608">
+                  <div class="section-title align-center">
+                    <div class="margin-bottom-16">
+                      <div class="margin-bottom-16">
+                        <div class="color-heading-top is-alt">
+                          All-in-one open source platform
+                        </div>
+                      </div>
+                      <h2>Connect, Discover, Optimize.</h2>
+                    </div>
+                    <div
+                      class="content-text content-text-para margin-bottom-32"
+                    >
+                      Connect your cloud accounts, uncover your resources, gain
+                      insights into costs and usage, and reclaim control of your
+                      infrastructure.
+                    </div>
+                    <div class="bottom-content content-alignment">
+                      <div class="button request-btn btn-color">
+                        <div>Request access</div>
+                      </div>
+                      <a href="#" class="text-label">
+                        <div class="text-arrow-icon">
+                          <div>Try live demo</div>
+                          <div class="arrow-icon">
+                            <svg
+                              width="auto"
+                              height="auto"
+                              viewBox="0 0 20 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 5.00391L12.5 10.0039L7.5 15.0039"
+                                stroke="currentColor"
+                                stroke-width="1.25"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="section-cards">
+                  <div class="grid-cols-1">
+                    <div class="grid-cols-2">
+                      <div class="grid-card">
+                        <div class="grid-card-img _01">
+                          <img
+                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bc6f05754a33d9bbb6323_Logo-card.webp"
+                            class="card-img"
+                            loading="lazy"
+                            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 93vw, (max-width: 1919px) 47vw, 608px"
+                            srcset="
+                              https://assets-global.website-files.com/65167b57095188b34c3dac91/651bc6f05754a33d9bbb6323_Logo-card-p-500.png   500w,
+                              https://assets-global.website-files.com/65167b57095188b34c3dac91/651bc6f05754a33d9bbb6323_Logo-card-p-800.png   800w,
+                              https://assets-global.website-files.com/65167b57095188b34c3dac91/651bc6f05754a33d9bbb6323_Logo-card-p-1080.png 1080w,
+                              https://assets-global.website-files.com/65167b57095188b34c3dac91/651bc6f05754a33d9bbb6323_Logo-card.webp       1704w
+                            "
+                          />
+                        </div>
+                        <div class="grid-card-body">
+                          <div class="margin-bottom-12">
+                            <h3>One platform, every major cloud</h3>
+                          </div>
+                          <p class="text-size-large">
+                            Tailwarden is fully cloud-agnostic, seamlessly
+                            integrating with major providers like AWS, GCP,
+                            Azure, OVH, and DigitalOcean.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="grid-card">
+                        <div class="grid-card-img">
+                          <img
+                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bc6f1ecf64d9a2c2aede1_Security-card.webp"
+                            class="card-img"
+                            loading="lazy"
+                            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 93vw, (max-width: 1919px) 47vw, 608px"
+                            srcset="
+                              https://assets-global.website-files.com/65167b57095188b34c3dac91/651bc6f1ecf64d9a2c2aede1_Security-card-p-500.png   500w,
+                              https://assets-global.website-files.com/65167b57095188b34c3dac91/651bc6f1ecf64d9a2c2aede1_Security-card-p-800.png   800w,
+                              https://assets-global.website-files.com/65167b57095188b34c3dac91/651bc6f1ecf64d9a2c2aede1_Security-card-p-1080.png 1080w,
+                              https://assets-global.website-files.com/65167b57095188b34c3dac91/651bc6f1ecf64d9a2c2aede1_Security-card.webp       1240w
+                            "
+                          />
+                        </div>
+                        <div class="grid-card-body">
+                          <div class="margin-bottom-12">
+                            <h3>Non-invasive account access</h3>
+                          </div>
+                          <p class="text-size-large">
+                            Tailwarden uses "read-only" access to your
+                            infrastructure. This ensures we can't access your
+                            database, view private data, or act on your
+                            infrastructure.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="grid-card is-horizontal">
+                        <div class="grid-card-body _03">
+                          <div class="margin-bottom-12">
+                            <h3>No idle resources, complete visibility</h3>
+                          </div>
+                          <p class="text-size-large">
+                            With Tailwarden's Virtual Tags, gain complete
+                            visibility into your cloud assets. Ensure every
+                            resource is properly tagged, driving optimal
+                            utilization and eliminating idle assets.
+                          </p>
+                        </div>
+                        <div class="grid-card-img _03">
+                          <img
+                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bcc504d6195a65d814671_Resources-card%20(1).webp"
+                            class="card-img"
+                            loading="lazy"
+                            width="481"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-cols-2">
+                      <div class="grid-card">
+                        <div class="grid-card-img _04">
+                          <img
+                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bc6f0b7970eb877461f52_Contributor-card.webp"
+                            class="card-img"
+                            loading="lazy"
+                            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 93vw, (max-width: 1919px) 47vw, 608px"
+                            srcset="
+                              https://assets-global.website-files.com/65167b57095188b34c3dac91/651bc6f0b7970eb877461f52_Contributor-card-p-500.png  500w,
+                              https://assets-global.website-files.com/65167b57095188b34c3dac91/651bc6f0b7970eb877461f52_Contributor-card-p-800.png  800w,
+                              https://assets-global.website-files.com/65167b57095188b34c3dac91/651bc6f0b7970eb877461f52_Contributor-card.webp      1216w
+                            "
+                          />
+                        </div>
+                        <div class="grid-card-body _04">
+                          <div class="margin-bottom-12">
+                            <div class="margin-bottom-12">
+                              <h3>Built on open-source</h3>
+                            </div>
+                            <p class="text-size-large">
+                              Tailwarden is based on the open source project
+                              Komiser, used by +3M developers today.
+                            </p>
+                          </div>
+                          <a href="#" class="text-label">
+                            <div class="text-arrow-icon">
+                              <div>Get started with Open Source version</div>
+                              <div class="arrow-icon">
+                                <svg
+                                  width="auto"
+                                  height="auto"
+                                  viewBox="0 0 20 21"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M7.5 5.00391L12.5 10.0039L7.5 15.0039"
+                                    stroke="currentColor"
+                                    stroke-width="1.25"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="grid-card">
+                        <div class="grid-card-img _05">
+                          <img
+                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bc6f0616124d1aafe1401_Filters-card.webp"
+                            class="card-img _05"
+                            loading="lazy"
+                            sizes="(max-width: 479px) 100vw, (max-width: 991px) 94vw, (max-width: 1919px) 52vw, 675.5625px"
+                            srcset="
+                            https://assets-global.website-files.com/65167b57095188b34c3dac91/651bc6f0616124d1aafe1401_Filters-card-p-500.webp 500w, https://assets-global.website-files.com/65167b57095188b34c3dac91/651bc6f0616124d1aafe1401_Filters-card-p-800.webp 800w, https://assets-global.website-files.com/65167b57095188b34c3dac91/651bc6f0616124d1aafe1401_Filters-card-p-1080.webp 1080w, https://assets-global.website-files.com/65167b57095188b34c3dac91/651bc6f0616124d1aafe1401_Filters-card.webp 1680w
+                            "
+                          />
+                        </div>
+                        <div class="grid-card-body _04">
+                          <div class="margin-bottom-12">
+                            <div class="margin-bottom-12">
+                              <h3>Designed for cloud-native teams</h3>
+                            </div>
+                            <p class="text-size-large">
+                              Set up in one minute, consolidate all FinOps tools
+                              and cloud provider dashboards into one.
+                            </p>
+                          </div>
+                          <a href="#" class="text-label">
+                            <div class="text-arrow-icon">
+                              <div>Request demo</div>
+                              <div class="arrow-icon">
+                                <svg
+                                  width="auto"
+                                  height="auto"
+                                  viewBox="0 0 20 21"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M7.5 5.00391L12.5 10.0039L7.5 15.0039"
+                                    stroke="currentColor"
+                                    stroke-width="1.25"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="section-spacing spacing-top-none">
+            <div class="page-padding">
+              <div class="container">
+                <div class="max-width-608">
+                  <div class="section-title align-center">
+                    <div class="text-size-large">And so much more...</div>
+                  </div>
+                </div>
+                <div class="grid-cols-4">
+                  <div class="grid-info">
+                    <div class="info-icon">
+                      <svg
+                        width="32"
+                        height="33"
+                        viewBox="0 0 32 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 3.00391L28 10.0039L16 17.0039L4 10.0039L16 3.00391Z"
+                          fill="url(#paint0_linear_190_26842)"
+                          fill-opacity="0.2"
+                        ></path>
+                        <path
+                          d="M28 10.0039L16 3.00391L4 10.0039M28 10.0039L16 17.0039M28 10.0039V22.0039L16 29.0039M4 10.0039L16 17.0039M4 10.0039V22.0039L16 29.0039M16 17.0039V29.0039"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_190_26842"
+                            x1="16"
+                            y1="3.00391"
+                            x2="16"
+                            y2="29.0039"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="white"></stop>
+                            <stop
+                              offset="1"
+                              stop-color="white"
+                              stop-opacity="0.5"
+                            ></stop>
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="margin-bottom-8">
+                      <h4>Resources Inventory</h4>
+                    </div>
+                    <div class="text-size-large">
+                      Unified view of resources across all cloud providers.
+                    </div>
+                  </div>
+                  <div class="grid-info">
+                    <div class="info-icon">
+                      <svg
+                        width="32"
+                        height="33"
+                        viewBox="0 0 32 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.0001 4.00391C19.673 4.00391 23.2737 4.3133 26.7774 4.90746C27.4879 5.02794 28 5.64864 28 6.36927V7.76127C28 8.55692 27.6839 9.31998 27.1213 9.88259L19.8787 17.1252C19.3161 17.6878 19 18.4509 19 19.2465V23.1498C19 24.2861 18.358 25.3249 17.3416 25.8331L13 28.0039V19.2465C13 18.4509 12.6839 17.6878 12.1213 17.1252L4.87868 9.88259C4.31607 9.31998 4 8.55692 4 7.76127V6.3693C4 5.64867 4.5121 5.02797 5.22259 4.90749C8.72639 4.31332 12.3271 4.00391 16.0001 4.00391Z"
+                          fill="url(#paint0_linear_190_26847)"
+                          fill-opacity="0.2"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_190_26847"
+                            x1="16"
+                            y1="4.00391"
+                            x2="16"
+                            y2="28.0039"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="white"></stop>
+                            <stop
+                              offset="1"
+                              stop-color="white"
+                              stop-opacity="0.5"
+                            ></stop>
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="margin-bottom-8">
+                      <h4>Advanced filters</h4>
+                    </div>
+                    <div class="text-size-large">
+                      Slice and dice your data and see only what's relevant for
+                      you.
+                    </div>
+                  </div>
+                  <div class="grid-info">
+                    <div class="info-icon">
+                      <svg
+                        width="32"
+                        height="33"
+                        viewBox="0 0 32 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12.7574 4.00391H7C5.34315 4.00391 4 5.34705 4 7.00391V12.7613C4 13.5569 4.31607 14.32 4.87868 14.8826L17.6535 27.6574C18.585 28.589 20.0265 28.8195 21.1287 28.0979C23.9028 26.2818 26.2778 23.9067 28.094 21.1326C28.8156 20.0304 28.585 18.5889 27.6535 17.6574L14.8787 4.88259C14.3161 4.31998 13.553 4.00391 12.7574 4.00391Z"
+                          fill="url(#paint0_linear_190_26852)"
+                          fill-opacity="0.2"
+                        ></path>
+                        <path
+                          d="M8 8.00391H8.01V8.01391H8V8.00391Z"
+                          fill="url(#paint1_linear_190_26852)"
+                          fill-opacity="0.2"
+                        ></path>
+                        <path
+                          d="M12.7574 4.00391H7C5.34315 4.00391 4 5.34705 4 7.00391V12.7613C4 13.5569 4.31607 14.32 4.87868 14.8826L17.6535 27.6574C18.585 28.589 20.0265 28.8195 21.1287 28.0979C23.9028 26.2818 26.2778 23.9067 28.094 21.1326C28.8156 20.0304 28.585 18.5889 27.6535 17.6574L14.8787 4.88259C14.3161 4.31998 13.553 4.00391 12.7574 4.00391Z"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M8 8.00391H8.01V8.01391H8V8.00391Z"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_190_26852"
+                            x1="16.2595"
+                            y1="4.00391"
+                            x2="16.2595"
+                            y2="28.5229"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="white"></stop>
+                            <stop
+                              offset="1"
+                              stop-color="white"
+                              stop-opacity="0.5"
+                            ></stop>
+                          </linearGradient>
+                          <linearGradient
+                            id="paint1_linear_190_26852"
+                            x1="16.2595"
+                            y1="4.00391"
+                            x2="16.2595"
+                            y2="28.5229"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="white"></stop>
+                            <stop
+                              offset="1"
+                              stop-color="white"
+                              stop-opacity="0.5"
+                            ></stop>
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="margin-bottom-8">
+                      <h4>Virtual tags</h4>
+                    </div>
+                    <div class="text-size-large">
+                      Auto-tag resources by team, environment, or region. No
+                      untagged assets left behind.
+                    </div>
+                  </div>
+                  <div class="grid-info">
+                    <div class="info-icon">
+                      <svg
+                        width="32"
+                        height="33"
+                        viewBox="0 0 32 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5 18.0039L19 3.00391L16 14.0039H27L13 29.0039L16 18.0039H5Z"
+                          fill="url(#paint0_linear_190_26857)"
+                          fill-opacity="0.2"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_190_26857"
+                            x1="16"
+                            y1="3.00391"
+                            x2="16"
+                            y2="29.0039"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="white"></stop>
+                            <stop
+                              offset="1"
+                              stop-color="white"
+                              stop-opacity="0.5"
+                            ></stop>
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="margin-bottom-8">
+                      <h4>Integrations</h4>
+                    </div>
+                    <div class="text-size-large">
+                      Receive Slack alerts for budget trends and get custom
+                      insights via email.
+                    </div>
+                  </div>
+                  <div class="grid-info">
+                    <div class="info-icon">
+                      <svg
+                        width="32"
+                        height="33"
+                        viewBox="0 0 32 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M28 16.0039C28 22.6313 22.6274 28.0039 16 28.0039C9.37258 28.0039 4 22.6313 4 16.0039C4 9.37649 9.37258 4.00391 16 4.00391C22.6274 4.00391 28 9.37649 28 16.0039Z"
+                          fill="url(#paint0_linear_190_26863)"
+                          fill-opacity="0.2"
+                        ></path>
+                        <path
+                          d="M16 8.00391V24.0039M12 20.2463L13.1718 21.1252C14.7339 22.2968 17.2664 22.2968 18.8285 21.1252C20.3905 19.9537 20.3905 18.0542 18.8285 16.8826C18.0474 16.2967 17.0236 16.0038 15.9999 16.0039C15.0333 16.004 14.0669 15.7111 13.3295 15.1253C11.8547 13.9537 11.8547 12.0542 13.3295 10.8826C14.8043 9.71105 17.1954 9.71105 18.6702 10.8826L19.2234 11.3221M28 16.0039C28 22.6313 22.6274 28.0039 16 28.0039C9.37258 28.0039 4 22.6313 4 16.0039C4 9.37649 9.37258 4.00391 16 4.00391C22.6274 4.00391 28 9.37649 28 16.0039Z"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_190_26863"
+                            x1="16"
+                            y1="4.00391"
+                            x2="16"
+                            y2="28.0039"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="white"></stop>
+                            <stop
+                              offset="1"
+                              stop-color="white"
+                              stop-opacity="0.5"
+                            ></stop>
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="margin-bottom-8">
+                      <h4>Granular cost</h4>
+                    </div>
+                    <div class="text-size-large">
+                      Dive deep into individual resource costs; eliminate
+                      guesswork.
+                    </div>
+                  </div>
+                  <div class="grid-info">
+                    <div class="info-icon">
+                      <svg
+                        width="32"
+                        height="33"
+                        viewBox="0 0 32 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3 23.0039C3 20.7948 4.79086 19.0039 7 19.0039H25C27.2091 19.0039 29 20.7948 29 23.0039C29 25.213 27.2091 27.0039 25 27.0039H7C4.79086 27.0039 3 25.213 3 23.0039Z"
+                          fill="url(#paint0_linear_190_26868)"
+                          fill-opacity="0.2"
+                        ></path>
+                        <path
+                          d="M25 23.0039H25.01V23.0139H25V23.0039Z"
+                          fill="url(#paint1_linear_190_26868)"
+                          fill-opacity="0.2"
+                        ></path>
+                        <path
+                          d="M21 23.0039H21.01V23.0139H21V23.0039Z"
+                          fill="url(#paint2_linear_190_26868)"
+                          fill-opacity="0.2"
+                        ></path>
+                        <path
+                          d="M29 23.0039V22.7003C29 22.2376 28.9465 21.7764 28.8405 21.326L25.8163 8.47323C25.338 6.44051 23.5242 5.00391 21.4359 5.00391H10.5641C8.47584 5.00391 6.66198 6.44051 6.18369 8.47323L3.1595 21.326C3.05352 21.7764 3 22.2376 3 22.7003V23.0039M29 23.0039C29 25.213 27.2091 27.0039 25 27.0039H7C4.79086 27.0039 3 25.213 3 23.0039M29 23.0039C29 20.7948 27.2091 19.0039 25 19.0039H7C4.79086 19.0039 3 20.7948 3 23.0039M25 23.0039H25.01V23.0139H25V23.0039ZM21 23.0039H21.01V23.0139H21V23.0039Z"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_190_26868"
+                            x1="16"
+                            y1="5.00391"
+                            x2="16"
+                            y2="27.0039"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="white"></stop>
+                            <stop
+                              offset="1"
+                              stop-color="white"
+                              stop-opacity="0.5"
+                            ></stop>
+                          </linearGradient>
+                          <linearGradient
+                            id="paint1_linear_190_26868"
+                            x1="16"
+                            y1="5.00391"
+                            x2="16"
+                            y2="27.0039"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="white"></stop>
+                            <stop
+                              offset="1"
+                              stop-color="white"
+                              stop-opacity="0.5"
+                            ></stop>
+                          </linearGradient>
+                          <linearGradient
+                            id="paint2_linear_190_26868"
+                            x1="16"
+                            y1="5.00391"
+                            x2="16"
+                            y2="27.0039"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="white"></stop>
+                            <stop
+                              offset="1"
+                              stop-color="white"
+                              stop-opacity="0.5"
+                            ></stop>
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="margin-bottom-8">
+                      <h4>Cost allocation</h4>
+                    </div>
+                    <div class="text-size-large">
+                      Align spend with project, feature, product, and beyond.
+                    </div>
+                  </div>
+                  <div class="grid-info">
+                    <div class="info-icon">
+                      <svg
+                        width="32"
+                        height="33"
+                        viewBox="0 0 32 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3 10.0039L16 3.00391L29 10.0039L23.4286 13.0039L16 17.0039L8.57143 13.0039L3 10.0039Z"
+                          fill="url(#paint0_linear_190_26873)"
+                          fill-opacity="0.2"
+                        ></path>
+                        <path
+                          d="M8.57143 13.0039L3 16.0039L8.57143 19.0039M8.57143 13.0039L16 17.0039L23.4286 13.0039M8.57143 13.0039L3 10.0039L16 3.00391L29 10.0039L23.4286 13.0039M23.4286 13.0039L29 16.0039L23.4286 19.0039M23.4286 19.0039L29 22.0039L16 29.0039L3 22.0039L8.57143 19.0039M23.4286 19.0039L16 23.0039L8.57143 19.0039"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_190_26873"
+                            x1="16"
+                            y1="3.00391"
+                            x2="16"
+                            y2="29.0039"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="white"></stop>
+                            <stop
+                              offset="1"
+                              stop-color="white"
+                              stop-opacity="0.5"
+                            ></stop>
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="margin-bottom-8">
+                      <h4>Bulk actions</h4>
+                    </div>
+                    <div class="text-size-large">
+                      Tag resources across multiple clouds all at once with a
+                      single click.
+                    </div>
+                  </div>
+                  <div class="grid-info">
+                    <div class="info-icon">
+                      <svg
+                        width="32"
+                        height="33"
+                        viewBox="0 0 32 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 8.50391C16 10.9892 13.9853 13.0039 11.5 13.0039C9.01472 13.0039 7 10.9892 7 8.50391C7 6.01863 9.01472 4.00391 11.5 4.00391C13.9853 4.00391 16 6.01863 16 8.50391Z"
+                          fill="url(#paint0_linear_190_26878)"
+                          fill-opacity="0.2"
+                        ></path>
+                        <path
+                          d="M27 11.5039C27 13.4369 25.433 15.0039 23.5 15.0039C21.567 15.0039 20 13.4369 20 11.5039C20 9.57091 21.567 8.00391 23.5 8.00391C25.433 8.00391 27 9.57091 27 11.5039Z"
+                          fill="url(#paint1_linear_190_26878)"
+                          fill-opacity="0.2"
+                        ></path>
+                        <path
+                          d="M3.00123 25.6497C3.00041 25.6012 3 25.5526 3 25.5039C3 20.8095 6.80558 17.0039 11.5 17.0039C14.7106 17.0039 17.5054 18.7839 18.9514 21.4109C19.6198 22.625 20 24.02 20 25.5039V25.5073C20 25.5549 19.9996 25.6023 19.9988 25.6497C17.5165 27.1442 14.6086 28.0039 11.5 28.0039C8.39137 28.0039 5.48352 27.1442 3.00123 25.6497Z"
+                          fill="url(#paint2_linear_190_26878)"
+                          fill-opacity="0.2"
+                        ></path>
+                        <path
+                          d="M20 25.5073C21.1106 25.8306 22.285 26.0039 23.4999 26.0039C25.4716 26.0039 27.3367 25.5474 28.9952 24.7343C28.9983 24.6579 28.9999 24.5811 28.9999 24.5039C28.9999 21.4663 26.5375 19.0039 23.4999 19.0039C21.6092 19.0039 19.9414 19.9579 18.9514 21.4109M20 25.5073V25.5039C20 24.02 19.6198 22.625 18.9514 21.4109M20 25.5073C20 25.5549 19.9996 25.6023 19.9988 25.6497C17.5165 27.1442 14.6086 28.0039 11.5 28.0039C8.39137 28.0039 5.48352 27.1442 3.00123 25.6497C3.00041 25.6012 3 25.5526 3 25.5039C3 20.8095 6.80558 17.0039 11.5 17.0039C14.7106 17.0039 17.5054 18.7839 18.9514 21.4109M16 8.50391C16 10.9892 13.9853 13.0039 11.5 13.0039C9.01472 13.0039 7 10.9892 7 8.50391C7 6.01863 9.01472 4.00391 11.5 4.00391C13.9853 4.00391 16 6.01863 16 8.50391ZM27 11.5039C27 13.4369 25.433 15.0039 23.5 15.0039C21.567 15.0039 20 13.4369 20 11.5039C20 9.57091 21.567 8.00391 23.5 8.00391C25.433 8.00391 27 9.57091 27 11.5039Z"
+                          stroke="white"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_190_26878"
+                            x1="16"
+                            y1="4.00391"
+                            x2="16"
+                            y2="28.0039"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="white"></stop>
+                            <stop
+                              offset="1"
+                              stop-color="white"
+                              stop-opacity="0.5"
+                            ></stop>
+                          </linearGradient>
+                          <linearGradient
+                            id="paint1_linear_190_26878"
+                            x1="16"
+                            y1="4.00391"
+                            x2="16"
+                            y2="28.0039"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="white"></stop>
+                            <stop
+                              offset="1"
+                              stop-color="white"
+                              stop-opacity="0.5"
+                            ></stop>
+                          </linearGradient>
+                          <linearGradient
+                            id="paint2_linear_190_26878"
+                            x1="16"
+                            y1="4.00391"
+                            x2="16"
+                            y2="28.0039"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="white"></stop>
+                            <stop
+                              offset="1"
+                              stop-color="white"
+                              stop-opacity="0.5"
+                            ></stop>
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="margin-bottom-8">
+                      <h4>Collaboration</h4>
+                    </div>
+                    <div class="text-size-large">
+                      Offer Engineering and Finance cloud insights without
+                      losing admin control.
+                    </div>
+                  </div>
+                  <div class="show-more gc4">
+                    <div class="show-more-btn">Show more</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="section-spacing spacing-y-xsmall">
+            <div class="page-padding">
+              <div class="container-large">
+                <div class="testimonials">
+                  <div class="max-width-560">
+                    <div class="section-title align-center">
+                      <div class="margin-bottom-16">
+                        <div class="margin-bottom-16">
+                          <div class="color-heading-top is-alt">
+                            Testimonials
+                          </div>
+                        </div>
+                        <h2>What people say about us</h2>
+                      </div>
+                      <div
+                        class="content-text content-text-para margin-bottom-32"
+                      >
+                        Tailwarden's community consists of open-source
+                        advocates, developers, DevOps engineers, contributors
+                        and entrepreneurs.
+                      </div>
+                      <div class="bottom-content content-alignment">
+                        <div class="button request-btn btn-color">
+                          <div>Request access</div>
+                        </div>
+                        <a href="#" class="text-label">
+                          <div class="text-arrow-icon">
+                            <div>Try live demo</div>
+                            <div class="arrow-icon">
+                              <svg
+                                width="auto"
+                                height="auto"
+                                viewBox="0 0 20 21"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M7.5 5.00391L12.5 10.0039L7.5 15.0039"
+                                  stroke="currentColor"
+                                  stroke-width="1.25"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="collapse-mobile-none">
+                    <div class="margin-bottom-24">
+                      <div class="marquee">
+                        <div class="infinite-slide-wrap">
+                          <div class="marquee-track-backword">
+                            <div class="marquee-track">
+                              <div class="marquee-track-inner">
+                                <div class="testimonials-card">
+                                  <div class="block-quote">
+                                    Tailwarden is the tool we need to
+                                    continuously optimize & maintain our
+                                    infrastructure, as we no longer need a
+                                    full-time DevOps engineer.
+                                  </div>
+                                  <div class="marquee-info">
+                                    <div class="marquee-left">
+                                      <div class="client-detail">
+                                        <div class="client-img">
+                                          <img
+                                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bdf7f44e4edfe8ad80a76_Ellipse%20167.webp"
+                                            loading="lazy"
+                                            width="56"
+                                            class="avatar-img"
+                                          />
+                                        </div>
+                                        <div class="client-text">
+                                          <div class="avatar-name">
+                                            Rosh Delsalla
+                                          </div>
+                                          <div class="mail-id">@rosh</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="marquee-right">
+                                      <svg
+                                        width="auto"
+                                        height="auto"
+                                        viewBox="0 0 32 33"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <g opacity="1">
+                                          <g clip-path="url(#clip0_190_27124)">
+                                            <path
+                                              d="M25.4799 11.096C25.4944 11.306 25.4944 11.516 25.4944 11.7279C25.4944 18.1857 20.5783 25.6334 11.5889 25.6334V25.6295C8.93346 25.6334 6.33314 24.8728 4.09766 23.4386C4.48379 23.485 4.87185 23.5082 5.26088 23.5092C7.46153 23.5111 9.59927 22.7728 11.3306 21.4131C9.23927 21.3734 7.4054 20.0099 6.76475 18.0192C7.49733 18.1605 8.25217 18.1315 8.9712 17.935C6.6912 17.4744 5.05088 15.4711 5.05088 13.1447V13.0828C5.73024 13.4611 6.49088 13.6711 7.26895 13.6944C5.12153 12.2592 4.45959 9.40244 5.75637 7.16889C8.23766 10.2221 11.8986 12.0782 15.8286 12.2747C15.4348 10.5773 15.9728 8.79857 17.2425 7.60534C19.2109 5.75502 22.3067 5.84986 24.157 7.81728C25.2515 7.60147 26.3006 7.19986 27.2606 6.63082C26.8957 7.76211 26.1322 8.72308 25.1122 9.33373C26.0809 9.21953 27.0273 8.96018 27.9186 8.56437C27.2625 9.5476 26.436 10.404 25.4799 11.096Z"
+                                              fill="white"
+                                            ></path>
+                                          </g>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_190_27124">
+                                            <rect
+                                              width="24"
+                                              height="19.7419"
+                                              fill="white"
+                                              transform="translate(4 6.13281)"
+                                            ></rect>
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="testimonials-card">
+                                  <div class="block-quote">
+                                    Our clients are more and more concerned
+                                    about the quality of our infra - but it's
+                                    hard to find the right solution. Tailwarden
+                                    looks like the right way to do it!
+                                  </div>
+                                  <div class="marquee-info">
+                                    <div class="marquee-left">
+                                      <div class="client-detail">
+                                        <div class="client-img">
+                                          <img
+                                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bdf7fb6fe57b91ef0c7d0_Ellipse%20167%20(1).webp"
+                                            loading="lazy"
+                                            width="56"
+                                            class="avatar-img"
+                                          />
+                                        </div>
+                                        <div class="client-text">
+                                          <div class="avatar-name">
+                                            Hadrien de March
+                                          </div>
+                                          <div class="mail-id">
+                                            @hadrien-de-march
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="marquee-right">
+                                      <svg
+                                        width="32"
+                                        height="33"
+                                        viewBox="0 0 32 33"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <g opacity="1">
+                                          <path
+                                            d="M25.0101 7.7139C23.353 6.95136 21.5759 6.38953 19.7179 6.06777C19.6841 6.06153 19.6503 6.07705 19.6329 6.1081C19.4043 6.51575 19.1511 7.04756 18.9739 7.46556C16.9755 7.16552 14.9873 7.16552 13.0298 7.46556C12.8526 7.03827 12.5902 6.51575 12.3606 6.1081C12.3432 6.07809 12.3094 6.06257 12.2755 6.06777C10.4186 6.38849 8.64152 6.95032 6.98335 7.7139C6.96898 7.7201 6.95668 7.73046 6.94851 7.74391C3.57783 12.7941 2.65446 17.7201 3.10745 22.5851C3.1095 22.6089 3.12283 22.6316 3.14125 22.6461C5.36515 24.2839 7.51936 25.2783 9.63357 25.9373C9.66741 25.9477 9.70325 25.9353 9.7248 25.9073C10.2249 25.2224 10.6707 24.5002 11.053 23.7407C11.0755 23.6963 11.054 23.6435 11.0079 23.6259C10.3007 23.3569 9.62741 23.0289 8.97971 22.6564C8.92849 22.6264 8.92437 22.553 8.9715 22.5178C9.10781 22.4153 9.24413 22.3088 9.37428 22.2012C9.39783 22.1815 9.43066 22.1774 9.45833 22.1898C13.7134 24.1381 18.32 24.1381 22.5249 22.1898C22.5526 22.1763 22.5854 22.1805 22.61 22.2001C22.7402 22.3077 22.8764 22.4153 23.0137 22.5178C23.0609 22.553 23.0578 22.6264 23.0066 22.6564C22.3589 23.0361 21.6856 23.3569 20.9774 23.6249C20.9313 23.6425 20.9108 23.6963 20.9334 23.7407C21.3238 24.4992 21.7696 25.2213 22.2605 25.9063C22.281 25.9353 22.3179 25.9477 22.3517 25.9373C24.4762 25.2783 26.6304 24.2839 28.8542 22.6461C28.8737 22.6316 28.886 22.6099 28.8881 22.5861C29.4302 16.9617 27.9801 12.076 25.0439 7.74491C25.0367 7.73046 25.0245 7.7201 25.0101 7.7139ZM11.6884 19.6228C10.4073 19.6228 9.35173 18.4433 9.35173 16.9948C9.35173 15.5462 10.3868 14.3668 11.6884 14.3668C13.0001 14.3668 14.0455 15.5566 14.025 16.9948C14.025 18.4433 12.9899 19.6228 11.6884 19.6228ZM20.3276 19.6228C19.0466 19.6228 17.9911 18.4433 17.9911 16.9948C17.9911 15.5462 19.0261 14.3668 20.3276 14.3668C21.6395 14.3668 22.6848 15.5566 22.6643 16.9948C22.6643 18.4433 21.6395 19.6228 20.3276 19.6228Z"
+                                            fill="white"
+                                          ></path>
+                                        </g>
+                                      </svg>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="testimonials-card">
+                                  <div class="block-quote">
+                                    Komiser: a tool to stay under budget by
+                                    uncovering hidden costs of your #AWS
+                                    infrastructure, monitoring increases in
+                                    spend, and making impactful changes based on
+                                    custom recommendations.
+                                  </div>
+                                  <div class="marquee-info">
+                                    <div class="marquee-left">
+                                      <div class="client-detail">
+                                        <div class="client-img">
+                                          <img
+                                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bdf7f41fba5432852b9c2_Ellipse%20167%20(2).webp"
+                                            loading="lazy"
+                                            width="56"
+                                            class="avatar-img"
+                                          />
+                                        </div>
+                                        <div class="client-text">
+                                          <div class="avatar-name">
+                                            Vincent Composieux
+                                          </div>
+                                          <div class="mail-id">
+                                            @vcomposieux
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="marquee-right">
+                                      <svg
+                                        width="auto"
+                                        height="auto"
+                                        viewBox="0 0 32 33"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <g opacity="1">
+                                          <g clip-path="url(#clip0_190_27124)">
+                                            <path
+                                              d="M25.4799 11.096C25.4944 11.306 25.4944 11.516 25.4944 11.7279C25.4944 18.1857 20.5783 25.6334 11.5889 25.6334V25.6295C8.93346 25.6334 6.33314 24.8728 4.09766 23.4386C4.48379 23.485 4.87185 23.5082 5.26088 23.5092C7.46153 23.5111 9.59927 22.7728 11.3306 21.4131C9.23927 21.3734 7.4054 20.0099 6.76475 18.0192C7.49733 18.1605 8.25217 18.1315 8.9712 17.935C6.6912 17.4744 5.05088 15.4711 5.05088 13.1447V13.0828C5.73024 13.4611 6.49088 13.6711 7.26895 13.6944C5.12153 12.2592 4.45959 9.40244 5.75637 7.16889C8.23766 10.2221 11.8986 12.0782 15.8286 12.2747C15.4348 10.5773 15.9728 8.79857 17.2425 7.60534C19.2109 5.75502 22.3067 5.84986 24.157 7.81728C25.2515 7.60147 26.3006 7.19986 27.2606 6.63082C26.8957 7.76211 26.1322 8.72308 25.1122 9.33373C26.0809 9.21953 27.0273 8.96018 27.9186 8.56437C27.2625 9.5476 26.436 10.404 25.4799 11.096Z"
+                                              fill="white"
+                                            ></path>
+                                          </g>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_190_27124">
+                                            <rect
+                                              width="24"
+                                              height="19.7419"
+                                              fill="white"
+                                              transform="translate(4 6.13281)"
+                                            ></rect>
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                    </div>
+                                  </div>
+                                  <img
+                                    src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651be7bbdfd2791d71828917_Frame%20625935.webp"
+                                    width="101.5"
+                                    class="marquee-sticker"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="marquee-track infinite-clone">
+                              <div class="marquee-track-inner">
+                                <div class="testimonials-card">
+                                  <div class="block-quote">
+                                    Tailwarden is the tool we need to
+                                    continuously optimize & maintain our
+                                    infrastructure, as we no longer need a
+                                    full-time DevOps engineer.
+                                  </div>
+                                  <div class="marquee-info">
+                                    <div class="marquee-left">
+                                      <div class="client-detail">
+                                        <div class="client-img">
+                                          <img
+                                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bdf7f44e4edfe8ad80a76_Ellipse%20167.webp"
+                                            loading="lazy"
+                                            width="56"
+                                            class="avatar-img"
+                                          />
+                                        </div>
+                                        <div class="client-text">
+                                          <div class="avatar-name">
+                                            Rosh Delsalla
+                                          </div>
+                                          <div class="mail-id">@rosh</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="marquee-right">
+                                      <svg
+                                        width="auto"
+                                        height="auto"
+                                        viewBox="0 0 32 33"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <g opacity="1">
+                                          <g clip-path="url(#clip0_190_27124)">
+                                            <path
+                                              d="M25.4799 11.096C25.4944 11.306 25.4944 11.516 25.4944 11.7279C25.4944 18.1857 20.5783 25.6334 11.5889 25.6334V25.6295C8.93346 25.6334 6.33314 24.8728 4.09766 23.4386C4.48379 23.485 4.87185 23.5082 5.26088 23.5092C7.46153 23.5111 9.59927 22.7728 11.3306 21.4131C9.23927 21.3734 7.4054 20.0099 6.76475 18.0192C7.49733 18.1605 8.25217 18.1315 8.9712 17.935C6.6912 17.4744 5.05088 15.4711 5.05088 13.1447V13.0828C5.73024 13.4611 6.49088 13.6711 7.26895 13.6944C5.12153 12.2592 4.45959 9.40244 5.75637 7.16889C8.23766 10.2221 11.8986 12.0782 15.8286 12.2747C15.4348 10.5773 15.9728 8.79857 17.2425 7.60534C19.2109 5.75502 22.3067 5.84986 24.157 7.81728C25.2515 7.60147 26.3006 7.19986 27.2606 6.63082C26.8957 7.76211 26.1322 8.72308 25.1122 9.33373C26.0809 9.21953 27.0273 8.96018 27.9186 8.56437C27.2625 9.5476 26.436 10.404 25.4799 11.096Z"
+                                              fill="white"
+                                            ></path>
+                                          </g>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_190_27124">
+                                            <rect
+                                              width="24"
+                                              height="19.7419"
+                                              fill="white"
+                                              transform="translate(4 6.13281)"
+                                            ></rect>
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="testimonials-card">
+                                  <div class="block-quote">
+                                    Our clients are more and more concerned
+                                    about the quality of our infra - but it's
+                                    hard to find the right solution. Tailwarden
+                                    looks like the right way to do it!
+                                  </div>
+                                  <div class="marquee-info">
+                                    <div class="marquee-left">
+                                      <div class="client-detail">
+                                        <div class="client-img">
+                                          <img
+                                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bdf7fb6fe57b91ef0c7d0_Ellipse%20167%20(1).webp"
+                                            loading="lazy"
+                                            width="56"
+                                            class="avatar-img"
+                                          />
+                                        </div>
+                                        <div class="client-text">
+                                          <div class="avatar-name">
+                                            Hadrien de March
+                                          </div>
+                                          <div class="mail-id">
+                                            @hadrien-de-march
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="marquee-right">
+                                      <svg
+                                        width="32"
+                                        height="33"
+                                        viewBox="0 0 32 33"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <g opacity="1">
+                                          <path
+                                            d="M25.0101 7.7139C23.353 6.95136 21.5759 6.38953 19.7179 6.06777C19.6841 6.06153 19.6503 6.07705 19.6329 6.1081C19.4043 6.51575 19.1511 7.04756 18.9739 7.46556C16.9755 7.16552 14.9873 7.16552 13.0298 7.46556C12.8526 7.03827 12.5902 6.51575 12.3606 6.1081C12.3432 6.07809 12.3094 6.06257 12.2755 6.06777C10.4186 6.38849 8.64152 6.95032 6.98335 7.7139C6.96898 7.7201 6.95668 7.73046 6.94851 7.74391C3.57783 12.7941 2.65446 17.7201 3.10745 22.5851C3.1095 22.6089 3.12283 22.6316 3.14125 22.6461C5.36515 24.2839 7.51936 25.2783 9.63357 25.9373C9.66741 25.9477 9.70325 25.9353 9.7248 25.9073C10.2249 25.2224 10.6707 24.5002 11.053 23.7407C11.0755 23.6963 11.054 23.6435 11.0079 23.6259C10.3007 23.3569 9.62741 23.0289 8.97971 22.6564C8.92849 22.6264 8.92437 22.553 8.9715 22.5178C9.10781 22.4153 9.24413 22.3088 9.37428 22.2012C9.39783 22.1815 9.43066 22.1774 9.45833 22.1898C13.7134 24.1381 18.32 24.1381 22.5249 22.1898C22.5526 22.1763 22.5854 22.1805 22.61 22.2001C22.7402 22.3077 22.8764 22.4153 23.0137 22.5178C23.0609 22.553 23.0578 22.6264 23.0066 22.6564C22.3589 23.0361 21.6856 23.3569 20.9774 23.6249C20.9313 23.6425 20.9108 23.6963 20.9334 23.7407C21.3238 24.4992 21.7696 25.2213 22.2605 25.9063C22.281 25.9353 22.3179 25.9477 22.3517 25.9373C24.4762 25.2783 26.6304 24.2839 28.8542 22.6461C28.8737 22.6316 28.886 22.6099 28.8881 22.5861C29.4302 16.9617 27.9801 12.076 25.0439 7.74491C25.0367 7.73046 25.0245 7.7201 25.0101 7.7139ZM11.6884 19.6228C10.4073 19.6228 9.35173 18.4433 9.35173 16.9948C9.35173 15.5462 10.3868 14.3668 11.6884 14.3668C13.0001 14.3668 14.0455 15.5566 14.025 16.9948C14.025 18.4433 12.9899 19.6228 11.6884 19.6228ZM20.3276 19.6228C19.0466 19.6228 17.9911 18.4433 17.9911 16.9948C17.9911 15.5462 19.0261 14.3668 20.3276 14.3668C21.6395 14.3668 22.6848 15.5566 22.6643 16.9948C22.6643 18.4433 21.6395 19.6228 20.3276 19.6228Z"
+                                            fill="white"
+                                          ></path>
+                                        </g>
+                                      </svg>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="testimonials-card">
+                                  <div class="block-quote">
+                                    Komiser: a tool to stay under budget by
+                                    uncovering hidden costs of your #AWS
+                                    infrastructure, monitoring increases in
+                                    spend, and making impactful changes based on
+                                    custom recommendations.
+                                  </div>
+                                  <div class="marquee-info">
+                                    <div class="marquee-left">
+                                      <div class="client-detail">
+                                        <div class="client-img">
+                                          <img
+                                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bdf7f41fba5432852b9c2_Ellipse%20167%20(2).webp"
+                                            loading="lazy"
+                                            width="56"
+                                            class="avatar-img"
+                                          />
+                                        </div>
+                                        <div class="client-text">
+                                          <div class="avatar-name">
+                                            Vincent Composieux
+                                          </div>
+                                          <div class="mail-id">
+                                            @vcomposieux
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="marquee-right">
+                                      <svg
+                                        width="auto"
+                                        height="auto"
+                                        viewBox="0 0 32 33"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <g opacity="1">
+                                          <g clip-path="url(#clip0_190_27124)">
+                                            <path
+                                              d="M25.4799 11.096C25.4944 11.306 25.4944 11.516 25.4944 11.7279C25.4944 18.1857 20.5783 25.6334 11.5889 25.6334V25.6295C8.93346 25.6334 6.33314 24.8728 4.09766 23.4386C4.48379 23.485 4.87185 23.5082 5.26088 23.5092C7.46153 23.5111 9.59927 22.7728 11.3306 21.4131C9.23927 21.3734 7.4054 20.0099 6.76475 18.0192C7.49733 18.1605 8.25217 18.1315 8.9712 17.935C6.6912 17.4744 5.05088 15.4711 5.05088 13.1447V13.0828C5.73024 13.4611 6.49088 13.6711 7.26895 13.6944C5.12153 12.2592 4.45959 9.40244 5.75637 7.16889C8.23766 10.2221 11.8986 12.0782 15.8286 12.2747C15.4348 10.5773 15.9728 8.79857 17.2425 7.60534C19.2109 5.75502 22.3067 5.84986 24.157 7.81728C25.2515 7.60147 26.3006 7.19986 27.2606 6.63082C26.8957 7.76211 26.1322 8.72308 25.1122 9.33373C26.0809 9.21953 27.0273 8.96018 27.9186 8.56437C27.2625 9.5476 26.436 10.404 25.4799 11.096Z"
+                                              fill="white"
+                                            ></path>
+                                          </g>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_190_27124">
+                                            <rect
+                                              width="24"
+                                              height="19.7419"
+                                              fill="white"
+                                              transform="translate(4 6.13281)"
+                                            ></rect>
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                    </div>
+                                  </div>
+                                  <img
+                                    src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651be7bbdfd2791d71828917_Frame%20625935.webp"
+                                    width="101.5"
+                                    class="marquee-sticker"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="marquee">
+                    <div class="infinite-slide-wrap">
+                      <div class="marquee-track-forward">
+                        <div class="marquee-track" style=" flex:0 0 auto; display:block;">
+                          <div class="marquee-track-inner">
+                            <div class="testimonials-card">
+                              <div class="block-quote">
+                                This is really great! I can't wait to use it and show the product to our developers.
+                              </div>
+                              <div class="marquee-info">
+                                <div class="marquee-left">
+                                  <div class="client-detail">
+                                    <div class="client-img">
+                                      <img
+                                        src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bdf7e6dfb35365e44f665_Ellipse%20167%20(4).webp"
+                                        loading="lazy"
+                                        width="56"
+                                        class="avatar-img"
+                                      />
+                                    </div>
+                                    <div class="client-text">
+                                      <div class="avatar-name">
+                                        Charles Petit
+                                      </div>
+                                      <div class="mail-id">@charlespetit</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="marquee-right">
+                                  <svg
+                                    width="auto"
+                                    height="auto"
+                                    viewBox="0 0 32 33"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <g opacity="1">
+                                      <g clip-path="url(#clip0_190_27124)">
+                                        <path
+                                          d="M25.4799 11.096C25.4944 11.306 25.4944 11.516 25.4944 11.7279C25.4944 18.1857 20.5783 25.6334 11.5889 25.6334V25.6295C8.93346 25.6334 6.33314 24.8728 4.09766 23.4386C4.48379 23.485 4.87185 23.5082 5.26088 23.5092C7.46153 23.5111 9.59927 22.7728 11.3306 21.4131C9.23927 21.3734 7.4054 20.0099 6.76475 18.0192C7.49733 18.1605 8.25217 18.1315 8.9712 17.935C6.6912 17.4744 5.05088 15.4711 5.05088 13.1447V13.0828C5.73024 13.4611 6.49088 13.6711 7.26895 13.6944C5.12153 12.2592 4.45959 9.40244 5.75637 7.16889C8.23766 10.2221 11.8986 12.0782 15.8286 12.2747C15.4348 10.5773 15.9728 8.79857 17.2425 7.60534C19.2109 5.75502 22.3067 5.84986 24.157 7.81728C25.2515 7.60147 26.3006 7.19986 27.2606 6.63082C26.8957 7.76211 26.1322 8.72308 25.1122 9.33373C26.0809 9.21953 27.0273 8.96018 27.9186 8.56437C27.2625 9.5476 26.436 10.404 25.4799 11.096Z"
+                                          fill="white"
+                                        ></path>
+                                      </g>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_190_27124">
+                                        <rect
+                                          width="24"
+                                          height="19.7419"
+                                          fill="white"
+                                          transform="translate(4 6.13281)"
+                                        ></rect>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="testimonials-card">
+                              <div class="block-quote">
+                                Just read about Komiser, an open-source tool created by @tailwarden to help manage cloud cost optimization and security. It's always inspiring to see developers making innovative solutions accessible to everyone.
+                              </div>
+                              <div class="marquee-info">
+                                <div class="marquee-left">
+                                  <div class="client-detail">
+                                    <div class="client-img">
+                                      <img
+                                        src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bdf7efa7b60ad8ad4f81c_Ellipse%20167%20(5).webp"
+                                        loading="lazy"
+                                        width="56"
+                                        class="avatar-img"
+                                      />
+                                    </div>
+                                    <div class="client-text">
+                                      <div class="avatar-name">
+                                        Manosh Brabagar Malai
+                                      </div>
+                                      <div class="mail-id">
+                                        @mmalai
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="marquee-right">
+                                  <svg width="auto" height="auto" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="1">
+                                    <path d="M24.4491 24.4529H20.8931V18.8839C20.8931 17.556 20.8694 15.8465 19.0436 15.8465C17.1915 15.8465 16.9081 17.2933 16.9081 18.7872V24.4525H13.352V13.0005H16.7658V14.5656H16.8136C17.1553 13.9814 17.6489 13.5009 18.2421 13.1751C18.8352 12.8493 19.5056 12.6905 20.1819 12.7156C23.7861 12.7156 24.4506 15.0863 24.4506 18.1705L24.4491 24.4529ZM9.3396 11.4351C8.93145 11.4352 8.53244 11.3142 8.19304 11.0875C7.85365 10.8608 7.58912 10.5386 7.43286 10.1615C7.27661 9.7845 7.23565 9.36958 7.3152 8.96925C7.39475 8.56893 7.59122 8.20121 7.87978 7.91256C8.16835 7.62391 8.53602 7.42731 8.9363 7.34758C9.33659 7.2679 9.75151 7.30868 10.1286 7.46481C10.5057 7.62094 10.8281 7.88537 11.0549 8.22468C11.2817 8.56399 11.4028 8.96296 11.4029 9.37111C11.4029 9.6421 11.3496 9.91047 11.2459 10.1609C11.1423 10.4112 10.9903 10.6388 10.7987 10.8304C10.6071 11.0221 10.3796 11.1741 10.1293 11.2779C9.87896 11.3816 9.6106 11.4351 9.3396 11.4351ZM11.1176 24.4529H7.55787V13.0005H11.1176V24.4529ZM26.222 4.00554H5.77098C5.3068 4.0003 4.85953 4.17959 4.52743 4.50395C4.19533 4.82831 4.00564 5.27125 4 5.73544V26.2713C4.00546 26.7357 4.19503 27.1789 4.52712 27.5036C4.85918 27.8283 5.30658 28.0079 5.77098 28.003H26.222C26.6873 28.0088 27.1359 27.8297 27.4693 27.505C27.8027 27.1803 27.9936 26.7366 28 26.2713V5.73395C27.9934 5.26885 27.8024 4.82538 27.469 4.50102C27.1356 4.17666 26.6871 3.99794 26.222 4.00406" fill="white"></path>
+                                    </g>
+                                    </svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="testimonials-card">
+                              <div class="block-quote">
+                                Tailwarden is the tool we need to
+                                continuously optimize & maintain our
+                                infrastructure, as we no longer need a
+                                full-time DevOps engineer.
+                              </div>
+                              <div class="marquee-info">
+                                <div class="marquee-left">
+                                  <div class="client-detail">
+                                    <div class="client-img">
+                                      <img
+                                        src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bdf7f44e4edfe8ad80a76_Ellipse%20167.webp"
+                                        loading="lazy"
+                                        width="56"
+                                        class="avatar-img"
+                                      />
+                                    </div>
+                                    <div class="client-text">
+                                      <div class="avatar-name">
+                                        Rosh Delsalla
+                                      </div>
+                                      <div class="mail-id">@rosh</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="marquee-right">
+                                  <svg
+                                    width="auto"
+                                    height="auto"
+                                    viewBox="0 0 32 33"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <g opacity="1">
+                                      <g clip-path="url(#clip0_190_27124)">
+                                        <path
+                                          d="M25.4799 11.096C25.4944 11.306 25.4944 11.516 25.4944 11.7279C25.4944 18.1857 20.5783 25.6334 11.5889 25.6334V25.6295C8.93346 25.6334 6.33314 24.8728 4.09766 23.4386C4.48379 23.485 4.87185 23.5082 5.26088 23.5092C7.46153 23.5111 9.59927 22.7728 11.3306 21.4131C9.23927 21.3734 7.4054 20.0099 6.76475 18.0192C7.49733 18.1605 8.25217 18.1315 8.9712 17.935C6.6912 17.4744 5.05088 15.4711 5.05088 13.1447V13.0828C5.73024 13.4611 6.49088 13.6711 7.26895 13.6944C5.12153 12.2592 4.45959 9.40244 5.75637 7.16889C8.23766 10.2221 11.8986 12.0782 15.8286 12.2747C15.4348 10.5773 15.9728 8.79857 17.2425 7.60534C19.2109 5.75502 22.3067 5.84986 24.157 7.81728C25.2515 7.60147 26.3006 7.19986 27.2606 6.63082C26.8957 7.76211 26.1322 8.72308 25.1122 9.33373C26.0809 9.21953 27.0273 8.96018 27.9186 8.56437C27.2625 9.5476 26.436 10.404 25.4799 11.096Z"
+                                          fill="white"
+                                        ></path>
+                                      </g>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_190_27124">
+                                        <rect
+                                          width="24"
+                                          height="19.7419"
+                                          fill="white"
+                                          transform="translate(4 6.13281)"
+                                        ></rect>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="marquee-track infinite-clone" style=" flex:0 0 auto; display:block;">
+                          <div class="marquee-track-inner">
+                            <div class="testimonials-card">
+                              <div class="block-quote">
+                                This is really great! I can't wait to use it and show the product to our developers.
+                              </div>
+                              <div class="marquee-info">
+                                <div class="marquee-left">
+                                  <div class="client-detail">
+                                    <div class="client-img">
+                                      <img
+                                        src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bdf7e6dfb35365e44f665_Ellipse%20167%20(4).webp"
+                                        loading="lazy"
+                                        width="56"
+                                        class="avatar-img"
+                                      />
+                                    </div>
+                                    <div class="client-text">
+                                      <div class="avatar-name">
+                                        Charles Petit
+                                      </div>
+                                      <div class="mail-id">@charlespetit</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="marquee-right">
+                                  <svg
+                                    width="auto"
+                                    height="auto"
+                                    viewBox="0 0 32 33"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <g opacity="1">
+                                      <g clip-path="url(#clip0_190_27124)">
+                                        <path
+                                          d="M25.4799 11.096C25.4944 11.306 25.4944 11.516 25.4944 11.7279C25.4944 18.1857 20.5783 25.6334 11.5889 25.6334V25.6295C8.93346 25.6334 6.33314 24.8728 4.09766 23.4386C4.48379 23.485 4.87185 23.5082 5.26088 23.5092C7.46153 23.5111 9.59927 22.7728 11.3306 21.4131C9.23927 21.3734 7.4054 20.0099 6.76475 18.0192C7.49733 18.1605 8.25217 18.1315 8.9712 17.935C6.6912 17.4744 5.05088 15.4711 5.05088 13.1447V13.0828C5.73024 13.4611 6.49088 13.6711 7.26895 13.6944C5.12153 12.2592 4.45959 9.40244 5.75637 7.16889C8.23766 10.2221 11.8986 12.0782 15.8286 12.2747C15.4348 10.5773 15.9728 8.79857 17.2425 7.60534C19.2109 5.75502 22.3067 5.84986 24.157 7.81728C25.2515 7.60147 26.3006 7.19986 27.2606 6.63082C26.8957 7.76211 26.1322 8.72308 25.1122 9.33373C26.0809 9.21953 27.0273 8.96018 27.9186 8.56437C27.2625 9.5476 26.436 10.404 25.4799 11.096Z"
+                                          fill="white"
+                                        ></path>
+                                      </g>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_190_27124">
+                                        <rect
+                                          width="24"
+                                          height="19.7419"
+                                          fill="white"
+                                          transform="translate(4 6.13281)"
+                                        ></rect>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="testimonials-card">
+                              <div class="block-quote">
+                                Just read about Komiser, an open-source tool created by @tailwarden to help manage cloud cost optimization and security. It's always inspiring to see developers making innovative solutions accessible to everyone.
+                              </div>
+                              <div class="marquee-info">
+                                <div class="marquee-left">
+                                  <div class="client-detail">
+                                    <div class="client-img">
+                                      <img
+                                        src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bdf7efa7b60ad8ad4f81c_Ellipse%20167%20(5).webp"
+                                        loading="lazy"
+                                        width="56"
+                                        class="avatar-img"
+                                      />
+                                    </div>
+                                    <div class="client-text">
+                                      <div class="avatar-name">
+                                        Manosh Brabagar Malai
+                                      </div>
+                                      <div class="mail-id">
+                                        @mmalai
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="marquee-right">
+                                  <svg width="auto" height="auto" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="1">
+                                    <path d="M24.4491 24.4529H20.8931V18.8839C20.8931 17.556 20.8694 15.8465 19.0436 15.8465C17.1915 15.8465 16.9081 17.2933 16.9081 18.7872V24.4525H13.352V13.0005H16.7658V14.5656H16.8136C17.1553 13.9814 17.6489 13.5009 18.2421 13.1751C18.8352 12.8493 19.5056 12.6905 20.1819 12.7156C23.7861 12.7156 24.4506 15.0863 24.4506 18.1705L24.4491 24.4529ZM9.3396 11.4351C8.93145 11.4352 8.53244 11.3142 8.19304 11.0875C7.85365 10.8608 7.58912 10.5386 7.43286 10.1615C7.27661 9.7845 7.23565 9.36958 7.3152 8.96925C7.39475 8.56893 7.59122 8.20121 7.87978 7.91256C8.16835 7.62391 8.53602 7.42731 8.9363 7.34758C9.33659 7.2679 9.75151 7.30868 10.1286 7.46481C10.5057 7.62094 10.8281 7.88537 11.0549 8.22468C11.2817 8.56399 11.4028 8.96296 11.4029 9.37111C11.4029 9.6421 11.3496 9.91047 11.2459 10.1609C11.1423 10.4112 10.9903 10.6388 10.7987 10.8304C10.6071 11.0221 10.3796 11.1741 10.1293 11.2779C9.87896 11.3816 9.6106 11.4351 9.3396 11.4351ZM11.1176 24.4529H7.55787V13.0005H11.1176V24.4529ZM26.222 4.00554H5.77098C5.3068 4.0003 4.85953 4.17959 4.52743 4.50395C4.19533 4.82831 4.00564 5.27125 4 5.73544V26.2713C4.00546 26.7357 4.19503 27.1789 4.52712 27.5036C4.85918 27.8283 5.30658 28.0079 5.77098 28.003H26.222C26.6873 28.0088 27.1359 27.8297 27.4693 27.505C27.8027 27.1803 27.9936 26.7366 28 26.2713V5.73395C27.9934 5.26885 27.8024 4.82538 27.469 4.50102C27.1356 4.17666 26.6871 3.99794 26.222 4.00406" fill="white"></path>
+                                    </g>
+                                    </svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="testimonials-card">
+                              <div class="block-quote">
+                                Tailwarden is the tool we need to
+                                continuously optimize & maintain our
+                                infrastructure, as we no longer need a
+                                full-time DevOps engineer.
+                              </div>
+                              <div class="marquee-info">
+                                <div class="marquee-left">
+                                  <div class="client-detail">
+                                    <div class="client-img">
+                                      <img
+                                        src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bdf7f44e4edfe8ad80a76_Ellipse%20167.webp"
+                                        loading="lazy"
+                                        width="56"
+                                        class="avatar-img"
+                                      />
+                                    </div>
+                                    <div class="client-text">
+                                      <div class="avatar-name">
+                                        Rosh Delsalla
+                                      </div>
+                                      <div class="mail-id">@rosh</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="marquee-right">
+                                  <svg
+                                    width="auto"
+                                    height="auto"
+                                    viewBox="0 0 32 33"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <g opacity="1">
+                                      <g clip-path="url(#clip0_190_27124)">
+                                        <path
+                                          d="M25.4799 11.096C25.4944 11.306 25.4944 11.516 25.4944 11.7279C25.4944 18.1857 20.5783 25.6334 11.5889 25.6334V25.6295C8.93346 25.6334 6.33314 24.8728 4.09766 23.4386C4.48379 23.485 4.87185 23.5082 5.26088 23.5092C7.46153 23.5111 9.59927 22.7728 11.3306 21.4131C9.23927 21.3734 7.4054 20.0099 6.76475 18.0192C7.49733 18.1605 8.25217 18.1315 8.9712 17.935C6.6912 17.4744 5.05088 15.4711 5.05088 13.1447V13.0828C5.73024 13.4611 6.49088 13.6711 7.26895 13.6944C5.12153 12.2592 4.45959 9.40244 5.75637 7.16889C8.23766 10.2221 11.8986 12.0782 15.8286 12.2747C15.4348 10.5773 15.9728 8.79857 17.2425 7.60534C19.2109 5.75502 22.3067 5.84986 24.157 7.81728C25.2515 7.60147 26.3006 7.19986 27.2606 6.63082C26.8957 7.76211 26.1322 8.72308 25.1122 9.33373C26.0809 9.21953 27.0273 8.96018 27.9186 8.56437C27.2625 9.5476 26.436 10.404 25.4799 11.096Z"
+                                          fill="white"
+                                        ></path>
+                                      </g>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_190_27124">
+                                        <rect
+                                          width="24"
+                                          height="19.7419"
+                                          fill="white"
+                                          transform="translate(4 6.13281)"
+                                        ></rect>
+                                      </clipPath>
+                                    </defs>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonials-mobile hidden">
+                    <div class="marquee-track-inner">
+                      <div class="testimonials-card">
+                        <div class="block-quote">
+                          Tailwarden is the tool we need to
+                          continuously optimize & maintain our
+                          infrastructure, as we no longer need a
+                          full-time DevOps engineer.
+                        </div>
+                        <div class="marquee-info">
+                          <div class="marquee-left">
+                            <div class="client-detail">
+                              <div class="client-img">
+                                <img
+                                  src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bdf7f44e4edfe8ad80a76_Ellipse%20167.webp"
+                                  loading="lazy"
+                                  width="56"
+                                  class="avatar-img"
+                                />
+                              </div>
+                              <div class="client-text">
+                                <div class="avatar-name">
+                                  Rosh Delsalla
+                                </div>
+                                <div class="mail-id">@rosh</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="marquee-right">
+                            <svg
+                              width="auto"
+                              height="auto"
+                              viewBox="0 0 32 33"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g opacity="1">
+                                <g clip-path="url(#clip0_190_27124)">
+                                  <path
+                                    d="M25.4799 11.096C25.4944 11.306 25.4944 11.516 25.4944 11.7279C25.4944 18.1857 20.5783 25.6334 11.5889 25.6334V25.6295C8.93346 25.6334 6.33314 24.8728 4.09766 23.4386C4.48379 23.485 4.87185 23.5082 5.26088 23.5092C7.46153 23.5111 9.59927 22.7728 11.3306 21.4131C9.23927 21.3734 7.4054 20.0099 6.76475 18.0192C7.49733 18.1605 8.25217 18.1315 8.9712 17.935C6.6912 17.4744 5.05088 15.4711 5.05088 13.1447V13.0828C5.73024 13.4611 6.49088 13.6711 7.26895 13.6944C5.12153 12.2592 4.45959 9.40244 5.75637 7.16889C8.23766 10.2221 11.8986 12.0782 15.8286 12.2747C15.4348 10.5773 15.9728 8.79857 17.2425 7.60534C19.2109 5.75502 22.3067 5.84986 24.157 7.81728C25.2515 7.60147 26.3006 7.19986 27.2606 6.63082C26.8957 7.76211 26.1322 8.72308 25.1122 9.33373C26.0809 9.21953 27.0273 8.96018 27.9186 8.56437C27.2625 9.5476 26.436 10.404 25.4799 11.096Z"
+                                    fill="white"
+                                  ></path>
+                                </g>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_190_27124">
+                                  <rect
+                                    width="24"
+                                    height="19.7419"
+                                    fill="white"
+                                    transform="translate(4 6.13281)"
+                                  ></rect>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonials-card">
+                        <div class="block-quote">
+                          Our clients are more and more concerned
+                          about the quality of our infra - but it's
+                          hard to find the right solution. Tailwarden
+                          looks like the right way to do it!
+                        </div>
+                        <div class="marquee-info">
+                          <div class="marquee-left">
+                            <div class="client-detail">
+                              <div class="client-img">
+                                <img
+                                  src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bdf7fb6fe57b91ef0c7d0_Ellipse%20167%20(1).webp"
+                                  loading="lazy"
+                                  width="56"
+                                  class="avatar-img"
+                                />
+                              </div>
+                              <div class="client-text">
+                                <div class="avatar-name">
+                                  Hadrien de March
+                                </div>
+                                <div class="mail-id">
+                                  @hadrien-de-march
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="marquee-right">
+                            <svg
+                              width="32"
+                              height="33"
+                              viewBox="0 0 32 33"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g opacity="1">
+                                <path
+                                  d="M25.0101 7.7139C23.353 6.95136 21.5759 6.38953 19.7179 6.06777C19.6841 6.06153 19.6503 6.07705 19.6329 6.1081C19.4043 6.51575 19.1511 7.04756 18.9739 7.46556C16.9755 7.16552 14.9873 7.16552 13.0298 7.46556C12.8526 7.03827 12.5902 6.51575 12.3606 6.1081C12.3432 6.07809 12.3094 6.06257 12.2755 6.06777C10.4186 6.38849 8.64152 6.95032 6.98335 7.7139C6.96898 7.7201 6.95668 7.73046 6.94851 7.74391C3.57783 12.7941 2.65446 17.7201 3.10745 22.5851C3.1095 22.6089 3.12283 22.6316 3.14125 22.6461C5.36515 24.2839 7.51936 25.2783 9.63357 25.9373C9.66741 25.9477 9.70325 25.9353 9.7248 25.9073C10.2249 25.2224 10.6707 24.5002 11.053 23.7407C11.0755 23.6963 11.054 23.6435 11.0079 23.6259C10.3007 23.3569 9.62741 23.0289 8.97971 22.6564C8.92849 22.6264 8.92437 22.553 8.9715 22.5178C9.10781 22.4153 9.24413 22.3088 9.37428 22.2012C9.39783 22.1815 9.43066 22.1774 9.45833 22.1898C13.7134 24.1381 18.32 24.1381 22.5249 22.1898C22.5526 22.1763 22.5854 22.1805 22.61 22.2001C22.7402 22.3077 22.8764 22.4153 23.0137 22.5178C23.0609 22.553 23.0578 22.6264 23.0066 22.6564C22.3589 23.0361 21.6856 23.3569 20.9774 23.6249C20.9313 23.6425 20.9108 23.6963 20.9334 23.7407C21.3238 24.4992 21.7696 25.2213 22.2605 25.9063C22.281 25.9353 22.3179 25.9477 22.3517 25.9373C24.4762 25.2783 26.6304 24.2839 28.8542 22.6461C28.8737 22.6316 28.886 22.6099 28.8881 22.5861C29.4302 16.9617 27.9801 12.076 25.0439 7.74491C25.0367 7.73046 25.0245 7.7201 25.0101 7.7139ZM11.6884 19.6228C10.4073 19.6228 9.35173 18.4433 9.35173 16.9948C9.35173 15.5462 10.3868 14.3668 11.6884 14.3668C13.0001 14.3668 14.0455 15.5566 14.025 16.9948C14.025 18.4433 12.9899 19.6228 11.6884 19.6228ZM20.3276 19.6228C19.0466 19.6228 17.9911 18.4433 17.9911 16.9948C17.9911 15.5462 19.0261 14.3668 20.3276 14.3668C21.6395 14.3668 22.6848 15.5566 22.6643 16.9948C22.6643 18.4433 21.6395 19.6228 20.3276 19.6228Z"
+                                  fill="white"
+                                ></path>
+                              </g>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonials-card">
+                        <div class="block-quote">
+                          Komiser: a tool to stay under budget by
+                          uncovering hidden costs of your #AWS
+                          infrastructure, monitoring increases in
+                          spend, and making impactful changes based on
+                          custom recommendations.
+                        </div>
+                        <div class="marquee-info">
+                          <div class="marquee-left">
+                            <div class="client-detail">
+                              <div class="client-img">
+                                <img
+                                  src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bdf7f41fba5432852b9c2_Ellipse%20167%20(2).webp"
+                                  loading="lazy"
+                                  width="56"
+                                  class="avatar-img"
+                                />
+                              </div>
+                              <div class="client-text">
+                                <div class="avatar-name">
+                                  Vincent Composieux
+                                </div>
+                                <div class="mail-id">
+                                  @vcomposieux
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="marquee-right">
+                            <svg
+                              width="auto"
+                              height="auto"
+                              viewBox="0 0 32 33"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g opacity="1">
+                                <g clip-path="url(#clip0_190_27124)">
+                                  <path
+                                    d="M25.4799 11.096C25.4944 11.306 25.4944 11.516 25.4944 11.7279C25.4944 18.1857 20.5783 25.6334 11.5889 25.6334V25.6295C8.93346 25.6334 6.33314 24.8728 4.09766 23.4386C4.48379 23.485 4.87185 23.5082 5.26088 23.5092C7.46153 23.5111 9.59927 22.7728 11.3306 21.4131C9.23927 21.3734 7.4054 20.0099 6.76475 18.0192C7.49733 18.1605 8.25217 18.1315 8.9712 17.935C6.6912 17.4744 5.05088 15.4711 5.05088 13.1447V13.0828C5.73024 13.4611 6.49088 13.6711 7.26895 13.6944C5.12153 12.2592 4.45959 9.40244 5.75637 7.16889C8.23766 10.2221 11.8986 12.0782 15.8286 12.2747C15.4348 10.5773 15.9728 8.79857 17.2425 7.60534C19.2109 5.75502 22.3067 5.84986 24.157 7.81728C25.2515 7.60147 26.3006 7.19986 27.2606 6.63082C26.8957 7.76211 26.1322 8.72308 25.1122 9.33373C26.0809 9.21953 27.0273 8.96018 27.9186 8.56437C27.2625 9.5476 26.436 10.404 25.4799 11.096Z"
+                                    fill="white"
+                                  ></path>
+                                </g>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_190_27124">
+                                  <rect
+                                    width="24"
+                                    height="19.7419"
+                                    fill="white"
+                                    transform="translate(4 6.13281)"
+                                  ></rect>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                        <img
+                          src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651be7bbdfd2791d71828917_Frame%20625935.webp"
+                          width="101.5"
+                          class="marquee-sticker"
+                        />
+                      </div>
+                    </div>
+                    <div class="marquee-track-inner">
+                      <div class="testimonials-card">
+                        <div class="block-quote">
+                          This is really great! I can't wait to use it and show the product to our developers.
+                        </div>
+                        <div class="marquee-info">
+                          <div class="marquee-left">
+                            <div class="client-detail">
+                              <div class="client-img">
+                                <img
+                                  src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bdf7e6dfb35365e44f665_Ellipse%20167%20(4).webp"
+                                  loading="lazy"
+                                  width="56"
+                                  class="avatar-img"
+                                />
+                              </div>
+                              <div class="client-text">
+                                <div class="avatar-name">
+                                  Charles Petit
+                                </div>
+                                <div class="mail-id">@charlespetit</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="marquee-right">
+                            <svg
+                              width="auto"
+                              height="auto"
+                              viewBox="0 0 32 33"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g opacity="1">
+                                <g clip-path="url(#clip0_190_27124)">
+                                  <path
+                                    d="M25.4799 11.096C25.4944 11.306 25.4944 11.516 25.4944 11.7279C25.4944 18.1857 20.5783 25.6334 11.5889 25.6334V25.6295C8.93346 25.6334 6.33314 24.8728 4.09766 23.4386C4.48379 23.485 4.87185 23.5082 5.26088 23.5092C7.46153 23.5111 9.59927 22.7728 11.3306 21.4131C9.23927 21.3734 7.4054 20.0099 6.76475 18.0192C7.49733 18.1605 8.25217 18.1315 8.9712 17.935C6.6912 17.4744 5.05088 15.4711 5.05088 13.1447V13.0828C5.73024 13.4611 6.49088 13.6711 7.26895 13.6944C5.12153 12.2592 4.45959 9.40244 5.75637 7.16889C8.23766 10.2221 11.8986 12.0782 15.8286 12.2747C15.4348 10.5773 15.9728 8.79857 17.2425 7.60534C19.2109 5.75502 22.3067 5.84986 24.157 7.81728C25.2515 7.60147 26.3006 7.19986 27.2606 6.63082C26.8957 7.76211 26.1322 8.72308 25.1122 9.33373C26.0809 9.21953 27.0273 8.96018 27.9186 8.56437C27.2625 9.5476 26.436 10.404 25.4799 11.096Z"
+                                    fill="white"
+                                  ></path>
+                                </g>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_190_27124">
+                                  <rect
+                                    width="24"
+                                    height="19.7419"
+                                    fill="white"
+                                    transform="translate(4 6.13281)"
+                                  ></rect>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonials-card">
+                        <div class="block-quote">
+                          Just read about Komiser, an open-source tool created by @tailwarden to help manage cloud cost optimization and security. It's always inspiring to see developers making innovative solutions accessible to everyone.
+                        </div>
+                        <div class="marquee-info">
+                          <div class="marquee-left">
+                            <div class="client-detail">
+                              <div class="client-img">
+                                <img
+                                  src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bdf7efa7b60ad8ad4f81c_Ellipse%20167%20(5).webp"
+                                  loading="lazy"
+                                  width="56"
+                                  class="avatar-img"
+                                />
+                              </div>
+                              <div class="client-text">
+                                <div class="avatar-name">
+                                  Manosh Brabagar Malai
+                                </div>
+                                <div class="mail-id">
+                                  @mmalai
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="marquee-right">
+                            <svg width="auto" height="auto" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g opacity="1">
+                              <path d="M24.4491 24.4529H20.8931V18.8839C20.8931 17.556 20.8694 15.8465 19.0436 15.8465C17.1915 15.8465 16.9081 17.2933 16.9081 18.7872V24.4525H13.352V13.0005H16.7658V14.5656H16.8136C17.1553 13.9814 17.6489 13.5009 18.2421 13.1751C18.8352 12.8493 19.5056 12.6905 20.1819 12.7156C23.7861 12.7156 24.4506 15.0863 24.4506 18.1705L24.4491 24.4529ZM9.3396 11.4351C8.93145 11.4352 8.53244 11.3142 8.19304 11.0875C7.85365 10.8608 7.58912 10.5386 7.43286 10.1615C7.27661 9.7845 7.23565 9.36958 7.3152 8.96925C7.39475 8.56893 7.59122 8.20121 7.87978 7.91256C8.16835 7.62391 8.53602 7.42731 8.9363 7.34758C9.33659 7.2679 9.75151 7.30868 10.1286 7.46481C10.5057 7.62094 10.8281 7.88537 11.0549 8.22468C11.2817 8.56399 11.4028 8.96296 11.4029 9.37111C11.4029 9.6421 11.3496 9.91047 11.2459 10.1609C11.1423 10.4112 10.9903 10.6388 10.7987 10.8304C10.6071 11.0221 10.3796 11.1741 10.1293 11.2779C9.87896 11.3816 9.6106 11.4351 9.3396 11.4351ZM11.1176 24.4529H7.55787V13.0005H11.1176V24.4529ZM26.222 4.00554H5.77098C5.3068 4.0003 4.85953 4.17959 4.52743 4.50395C4.19533 4.82831 4.00564 5.27125 4 5.73544V26.2713C4.00546 26.7357 4.19503 27.1789 4.52712 27.5036C4.85918 27.8283 5.30658 28.0079 5.77098 28.003H26.222C26.6873 28.0088 27.1359 27.8297 27.4693 27.505C27.8027 27.1803 27.9936 26.7366 28 26.2713V5.73395C27.9934 5.26885 27.8024 4.82538 27.469 4.50102C27.1356 4.17666 26.6871 3.99794 26.222 4.00406" fill="white"></path>
+                              </g>
+                              </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonials-card">
+                        <div class="block-quote">
+                          Tailwarden is the tool we need to
+                          continuously optimize & maintain our
+                          infrastructure, as we no longer need a
+                          full-time DevOps engineer.
+                        </div>
+                        <div class="marquee-info">
+                          <div class="marquee-left">
+                            <div class="client-detail">
+                              <div class="client-img">
+                                <img
+                                  src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bdf7f44e4edfe8ad80a76_Ellipse%20167.webp"
+                                  loading="lazy"
+                                  width="56"
+                                  class="avatar-img"
+                                />
+                              </div>
+                              <div class="client-text">
+                                <div class="avatar-name">
+                                  Rosh Delsalla
+                                </div>
+                                <div class="mail-id">@rosh</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="marquee-right">
+                            <svg
+                              width="auto"
+                              height="auto"
+                              viewBox="0 0 32 33"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g opacity="1">
+                                <g clip-path="url(#clip0_190_27124)">
+                                  <path
+                                    d="M25.4799 11.096C25.4944 11.306 25.4944 11.516 25.4944 11.7279C25.4944 18.1857 20.5783 25.6334 11.5889 25.6334V25.6295C8.93346 25.6334 6.33314 24.8728 4.09766 23.4386C4.48379 23.485 4.87185 23.5082 5.26088 23.5092C7.46153 23.5111 9.59927 22.7728 11.3306 21.4131C9.23927 21.3734 7.4054 20.0099 6.76475 18.0192C7.49733 18.1605 8.25217 18.1315 8.9712 17.935C6.6912 17.4744 5.05088 15.4711 5.05088 13.1447V13.0828C5.73024 13.4611 6.49088 13.6711 7.26895 13.6944C5.12153 12.2592 4.45959 9.40244 5.75637 7.16889C8.23766 10.2221 11.8986 12.0782 15.8286 12.2747C15.4348 10.5773 15.9728 8.79857 17.2425 7.60534C19.2109 5.75502 22.3067 5.84986 24.157 7.81728C25.2515 7.60147 26.3006 7.19986 27.2606 6.63082C26.8957 7.76211 26.1322 8.72308 25.1122 9.33373C26.0809 9.21953 27.0273 8.96018 27.9186 8.56437C27.2625 9.5476 26.436 10.404 25.4799 11.096Z"
+                                    fill="white"
+                                  ></path>
+                                </g>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_190_27124">
+                                  <rect
+                                    width="24"
+                                    height="19.7419"
+                                    fill="white"
+                                    transform="translate(4 6.13281)"
+                                  ></rect>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="show-more tm">
+                      <div class="show-more-btn">Show more</div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="section-spacing">
+            <div class="page-padding">
+              <div class="container">
+                <div class="max-width-560">
+                  <div class="section-title align-center">
+                    <div class="margin-bottom-16">
+                      <div class="margin-bottom-16">
+                        <div class="color-heading-top is-alt">
+                          Built on open source
+                        </div>
+                      </div>
+                      <h2>Trusted by open-source communities</h2>
+                    </div>
+                    <div
+                      class="content-text content-text-para margin-bottom-32"
+                    >
+                    Tailwarden is based on the open source project Komiser, used by +3M developers today.
+                    </div>
+                    <div class="bottom-content content-alignment">
+                      <div class="button request-btn btn-color">
+                        <div>Request access</div>
+                      </div>
+                      <a href="#" class="text-label">
+                        <div class="text-arrow-icon">
+                          <div>Join our Discord community</div>
+                          <div class="arrow-icon">
+                            <svg
+                              width="auto"
+                              height="auto"
+                              viewBox="0 0 20 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.5 5.00391L12.5 10.0039L7.5 15.0039"
+                                stroke="currentColor"
+                                stroke-width="1.25"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="section-cards">
+                  <div class="grid-cols-1">
+                    <div>
+                      <div class="grid-card is-horizontal">
+                        <div class="grid-card-body _06">
+                          <div>
+                            <img src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bec6eacbfbfa372572c70_Frame%20763.webp" width="60" class="komiser-card-06">
+                          </div>
+                          <div class="margin-bottom-12">
+                            <h3>Discover Komiser</h3>
+                          </div>
+                          <p class="text-size-large margin-bottom-12">
+                            Komiser is an open source project created to analyse and manage cloud cost, usage, security and governance all in one place
+                          </p>
+                          <a href="#" class="text-label">
+                            <div class="text-arrow-icon">
+                              <div>Get started with open source version
+                              </div>
+                              <div class="arrow-icon">
+                                <svg
+                                  width="auto"
+                                  height="auto"
+                                  viewBox="0 0 20 21"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M7.5 5.00391L12.5 10.0039L7.5 15.0039"
+                                    stroke="currentColor"
+                                    stroke-width="1.25"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="grid-card-img _06">
+                          <img
+                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bec6f7db4f38d1017ccd2_Container.webp"
+                            sizes="100w"
+                            src-set="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bec6f7db4f38d1017ccd2_Container-p-500.webp 500w, https://assets-global.website-files.com/65167b57095188b34c3dac91/651bec6f7db4f38d1017ccd2_Container.webp 1112w"
+                            class="card-img _06"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-cols-2">
+                      <div class="grid-card _07">
+                        <div class="grid-card-img">
+                          <!-- link:-  (href="https://www.youtube.com/watch?v=Siv4V7LCYEs") -->
+                          <a href="#" class="link-play">
+                            <div class="icon-play">
+                              <svg width="72" height="73" viewBox="0 0 72 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_190_27100)">
+                                <path d="M23 23.5427C23 21.7108 24.9957 20.5496 26.6267 21.4324L51.7321 35.0206C53.4226 35.9356 53.4226 38.3261 51.7321 39.2411L26.6267 52.8293C24.9957 53.7121 23 52.5509 23 50.7191V23.5427Z" fill="white"></path>
+                                </g>
+                                </svg>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="grid-card-body _04">
+                          <div class="margin-bottom-12">
+                            <div class="margin-bottom-12">
+                              <h3>Want to learn more?</h3>
+                            </div>
+                            <p class="text-size-large">
+                              Watch our exclusive workshops, community calls, and ask-me-anything sessions to gain insights from cloud experts.
+                            </p>
+                          </div>
+                          <a href="#" class="text-label">
+                            <div class="text-arrow-icon">
+                              <div>Watch our last workshop</div>
+                              <div class="arrow-icon">
+                                <svg
+                                  width="auto"
+                                  height="auto"
+                                  viewBox="0 0 20 21"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M7.5 5.00391L12.5 10.0039L7.5 15.0039"
+                                    stroke="currentColor"
+                                    stroke-width="1.25"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="grid-card">
+                        <div class="grid-card-img _08">
+                          <img
+                            src="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bec6f7fe4e6d1b7aefda8_discord-card.webp"
+                            class="card-img _08"
+                            width="608"
+                            loading="lazy"
+                            sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 93vw, (max-width: 1919px) 47vw, 608px"
+                            srcset="https://assets-global.website-files.com/65167b57095188b34c3dac91/651bec6f7fe4e6d1b7aefda8_discord-card-p-500.png 500w, https://assets-global.website-files.com/65167b57095188b34c3dac91/651bec6f7fe4e6d1b7aefda8_discord-card-p-800.webp 800w, https://assets-global.website-files.com/65167b57095188b34c3dac91/651bec6f7fe4e6d1b7aefda8_discord-card-p-1080.png 1080w, https://assets-global.website-files.com/65167b57095188b34c3dac91/651bec6f7fe4e6d1b7aefda8_discord-card.webp 1216w"
+                          />
+                        </div>
+                        <div class="grid-card-body _04">
+                          <div class="margin-bottom-12">
+                            <div class="margin-bottom-12">
+                              <h3>Join our Discord community</h3>
+                            </div>
+                            <p class="text-size-large">
+                              Set up in one minute, consolidate all FinOps tools and cloud provider dashboards into one.
+                            </p>
+                          </div>
+                          <a href="#" class="text-label">
+                            <div class="text-arrow-icon">
+                              <div>Join our Discord community</div>
+                              <div class="arrow-icon">
+                                <svg
+                                  width="auto"
+                                  height="auto"
+                                  viewBox="0 0 20 21"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M7.5 5.00391L12.5 10.0039L7.5 15.0039"
+                                    stroke="currentColor"
+                                    stroke-width="1.25"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="page-padding">
+          <div class="container">
+            <div class="footer-content">
+              <div class="margin-bottom-64">
+                <a class="footer-logo">
+                  <img src="https://assets-global.website-files.com/65167b57095188b34c3dac91/6516a8a9e7363b3fde38151a_Frame.svg" class="footer-logo-image">
+                </a>
+              </div>
+              <div class="footer-inner-content">
+                <div class="footer-grid">
+                  <div class="link-blocks">
+                    <h6 class="link-blocks-heading">Resources</h6>
+                    <a href="#" class="footer-link">Blog</a>
+                    <a href="#" class="footer-link">Changelog</a>
+                    <a href="#" class="footer-link">Documentation</a>
+                    <a href="#" class="footer-link">Roadmap</a>
+                  </div>
+                  <div class="link-blocks">
+                    <h6 class="link-blocks-heading">Company</h6>
+                    <a href="#" class="footer-link">Careers</a>
+                  </div>
+                  <div class="link-blocks">
+                    <h6 class="link-blocks-heading">Products</h6>
+                    <a href="#" class="footer-link">Tailwarden</a>
+                    <a href="#" class="footer-link">Komiser</a>
+                  </div>
+                  <div class="link-blocks">
+                    <div class="footer-icons">
+                      <a href="#" class="footer-link">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M18.2378 6.26556C17.0905 5.73765 15.8602 5.3487 14.5739 5.12594C14.5505 5.12162 14.5271 5.13237 14.515 5.15387C14.3568 5.43608 14.1816 5.80425 14.0588 6.09364C12.6753 5.88592 11.2989 5.88592 9.94373 6.09364C9.821 5.79782 9.63935 5.43608 9.48044 5.15387C9.46835 5.13309 9.44495 5.12234 9.42153 5.12594C8.13594 5.34798 6.90567 5.73693 5.7577 6.26556C5.74775 6.26985 5.73924 6.27703 5.73358 6.28634C3.40004 9.78256 2.76078 13.1929 3.07439 16.5609C3.0758 16.5773 3.08504 16.5931 3.09779 16.6031C4.63741 17.737 6.12879 18.4254 7.59247 18.8817C7.61589 18.8888 7.64071 18.8802 7.65562 18.8609C8.00184 18.3867 8.31049 17.8867 8.57512 17.361C8.59072 17.3302 8.57581 17.2936 8.5439 17.2814C8.05435 17.0952 7.5882 16.8681 7.13979 16.6103C7.10433 16.5895 7.10148 16.5386 7.13411 16.5143C7.22848 16.4434 7.32285 16.3696 7.41296 16.2951C7.42926 16.2815 7.45199 16.2786 7.47115 16.2872C10.417 17.636 13.6062 17.636 16.5172 16.2872C16.5364 16.2779 16.5591 16.2808 16.5761 16.2944C16.6662 16.3689 16.7606 16.4434 16.8557 16.5143C16.8883 16.5386 16.8862 16.5895 16.8507 16.6103C16.4023 16.8732 15.9361 17.0952 15.4459 17.2808C15.414 17.2929 15.3998 17.3302 15.4154 17.361C15.6857 17.886 15.9943 18.386 16.3342 18.8602C16.3484 18.8802 16.3739 18.8888 16.3973 18.8817C17.8681 18.4254 19.3595 17.737 20.8991 16.6031C20.9126 16.5931 20.9211 16.5781 20.9225 16.5616C21.2978 12.6678 20.2939 9.28546 18.2612 6.28703C18.2562 6.27703 18.2477 6.26985 18.2378 6.26556ZM9.01501 14.5101C8.12812 14.5101 7.39735 13.6936 7.39735 12.6907C7.39735 11.6879 8.11395 10.8713 9.01501 10.8713C9.92316 10.8713 10.6469 11.6951 10.6327 12.6907C10.6327 13.6936 9.91606 14.5101 9.01501 14.5101ZM14.9961 14.5101C14.1092 14.5101 13.3784 13.6936 13.3784 12.6907C13.3784 11.6879 14.095 10.8713 14.9961 10.8713C15.9042 10.8713 16.6279 11.6951 16.6137 12.6907C16.6137 13.6936 15.9042 14.5101 14.9961 14.5101Z" fill="white" fill-opacity="1"></path>
+                          </svg>
+                      </a>
+                      <a href="#" class="footer-link">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path xmlns="http://www.w3.org/2000/svg" d="M17.1601 3.87012H19.9201L13.8601 10.7701L20.9401 20.1301H15.3841L11.0341 14.4421L6.05408 20.1301H3.29408L9.71408 12.7501L2.93408 3.87012H8.62808L12.5581 9.06612L17.1601 3.87012ZM16.1941 18.5101H17.7241L7.82408 5.43012H6.18008L16.1941 18.5101Z" fill="white" fill-opacity="1"></path></svg>
+                      </a>
+                      <a href="#" class="footer-link">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.6367 17.5774H15.266V13.8649C15.266 12.9797 15.2501 11.8401 14.033 11.8401C12.7982 11.8401 12.6093 12.8046 12.6093 13.8005V17.5772H10.2386V9.94284H12.5145V10.9862H12.5463C12.7741 10.5967 13.1032 10.2764 13.4986 10.0592C13.894 9.84205 14.341 9.73619 14.7918 9.75292C17.1946 9.75292 17.6376 11.3333 17.6376 13.3894L17.6367 17.5774ZM7.56364 8.89926C7.29154 8.89932 7.02553 8.81867 6.79927 8.66756C6.573 8.51642 6.39665 8.30162 6.29248 8.05024C6.18831 7.7989 6.16101 7.52229 6.21404 7.25542C6.26707 6.98855 6.39805 6.74341 6.59043 6.55098C6.7828 6.35856 7.02792 6.22749 7.29477 6.17435C7.56163 6.12123 7.83824 6.14841 8.08965 6.25249C8.34107 6.35658 8.55594 6.53286 8.70717 6.75906C8.85837 6.98525 8.93911 7.25122 8.93914 7.52331C8.93917 7.70397 8.90362 7.88288 8.83451 8.04981C8.76542 8.21671 8.6641 8.3684 8.53638 8.49614C8.40867 8.62391 8.257 8.72528 8.09009 8.79446C7.92321 8.8636 7.7443 8.89924 7.56364 8.89926ZM8.74898 17.5774H6.37582V9.94284H8.74898V17.5774ZM18.8185 3.9464H5.18456C4.8751 3.94291 4.57692 4.06243 4.35553 4.27866C4.13413 4.4949 4.00767 4.79018 4.00391 5.09962V18.7897C4.00755 19.0992 4.13392 19.3947 4.35532 19.6112C4.57669 19.8277 4.87496 19.9474 5.18456 19.9441H18.8185C19.1288 19.948 19.4279 19.8286 19.6501 19.6121C19.8724 19.3957 19.9996 19.0999 20.0039 18.7897V5.09863C19.9995 4.78858 19.8721 4.49294 19.6499 4.27671C19.4276 4.06048 19.1286 3.94133 18.8185 3.94541" fill="white" fill-opacity="1"></path>
+                          </svg>
+                      </a>
+                      <a href="#" class="footer-link">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9996 3.22656C7.02997 3.22656 3 7.25567 3 12.2261C3 16.2022 5.57877 19.5759 9.15454 20.766C9.60445 20.849 9.76926 20.5708 9.76926 20.3332C9.76926 20.1187 9.76113 19.4098 9.75685 18.6577C7.253 19.2022 6.72474 17.596 6.72474 17.596C6.3155 16.5558 5.7256 16.2792 5.7256 16.2792C4.90882 15.7206 5.78724 15.7321 5.78724 15.7321C6.69092 15.7955 7.16695 16.6598 7.16695 16.6598C7.96961 18.0356 9.27226 17.638 9.78596 17.4077C9.86687 16.8259 10.0997 16.4291 10.3574 16.2043C8.35831 15.977 6.25728 15.2052 6.25728 11.7565C6.25728 10.7741 6.60873 9.971 7.1845 9.34087C7.09118 9.11398 6.78296 8.19874 7.27183 6.95901C7.27183 6.95901 8.0274 6.71715 9.74743 7.88153C10.4653 7.68204 11.2354 7.5823 12 7.57845C12.765 7.58187 13.5351 7.68204 14.2547 7.88153C15.9726 6.71715 16.7269 6.95901 16.7269 6.95901C17.2166 8.19874 16.9088 9.11398 16.8151 9.34087C17.3921 9.971 17.7414 10.7741 17.7414 11.7565C17.7414 15.2133 15.6361 15.974 13.6323 16.197C13.9551 16.4761 14.2427 17.0241 14.2427 17.8636C14.2427 19.0678 14.2324 20.0369 14.2324 20.3332C14.2324 20.5729 14.3943 20.8533 14.8506 20.7651C18.4247 19.5737 21 16.2013 21 12.2266C21 7.2561 16.9705 3.22699 12.0004 3.22699L11.9996 3.22656Z" fill="white" fill-opacity="1"></path>
+                          <path d="M7.06616 15.662C7.04878 15.7017 6.98644 15.7134 6.93016 15.6862C6.87236 15.6602 6.84025 15.6065 6.85876 15.5668C6.87576 15.5264 6.93809 15.5151 6.99551 15.5419C7.05331 15.568 7.08618 15.6224 7.06616 15.6617V15.662Z" fill="white" fill-opacity="1"></path>
+                          <path d="M7.38844 16.019C7.35066 16.0541 7.27662 16.0379 7.22637 15.9824C7.17424 15.9268 7.1648 15.8528 7.20295 15.8173C7.24186 15.7821 7.31364 15.7988 7.36577 15.8539C7.41791 15.9098 7.42811 15.9835 7.38844 16.019Z" fill="white" fill-opacity="1"></path>
+                          <path d="M7.70029 16.4786C7.65156 16.5126 7.57185 16.4809 7.52274 16.4102C7.474 16.3396 7.474 16.255 7.52387 16.221C7.57298 16.187 7.65156 16.2176 7.70143 16.2874C7.74978 16.3592 7.74978 16.4438 7.70029 16.4786Z" fill="white" fill-opacity="1"></path>
+                          <path d="M8.12987 16.9184C8.08643 16.9664 7.9935 16.9535 7.92588 16.8878C7.85636 16.8239 7.8371 16.7329 7.88054 16.6849C7.92474 16.6369 8.01805 16.6505 8.08643 16.7155C8.15556 16.7794 8.17634 16.8708 8.12987 16.9184Z" fill="white" fill-opacity="1"></path>
+                          <path d="M8.72259 17.1756C8.70332 17.2379 8.61416 17.2659 8.52425 17.2394C8.43434 17.2122 8.37579 17.1393 8.39392 17.0766C8.41243 17.0139 8.50234 16.9844 8.59301 17.0128C8.68292 17.04 8.74148 17.1121 8.72296 17.1756H8.72259Z" fill="white" fill-opacity="1"></path>
+                          <path d="M9.37276 17.2234C9.37503 17.2888 9.29872 17.3432 9.20427 17.3443C9.10945 17.3466 9.03238 17.2933 9.03125 17.2291C9.03125 17.163 9.10567 17.1094 9.20087 17.1075C9.29532 17.1056 9.37276 17.1585 9.37276 17.2234Z" fill="white" fill-opacity="1"></path>
+                          <path d="M9.97728 17.1199C9.98861 17.1838 9.92288 17.2495 9.82919 17.2669C9.73701 17.2839 9.65164 17.2442 9.63992 17.1811C9.62859 17.1158 9.69546 17.05 9.78726 17.033C9.88095 17.0168 9.96519 17.0549 9.97728 17.1199Z" fill="white" fill-opacity="1"></path>
+                          </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <div class="footer-bottom-left">© 2023 Tailwarden. All rights reserved.</div>
+                <div class="footer-bottom-right">
+                  <div class="text-inner-left">Privacy policy</div>
+                  <div class="text-inner-right">Terms of use</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      const showBtn=document.querySelectorAll(".show-more");
+      const gridCol4Expand = document.querySelector(".grid-cols-4");
+      const testimonialsMobile=document.querySelector(".testimonials-mobile");
+      for(let i=0; i<showBtn.length; i++){
+        showBtn[i].addEventListener('click',()=>{
+          if(showBtn[i].classList.contains("gc4"))
+          {
+            gridCol4Expand.style.height="initial"; 
+          }
+          else if(showBtn[i].classList.contains("tm")){
+            testimonialsMobile.style.height="initial";
+          }
+          showBtn[i].style.display="none";
+        });          
+      }
+
+      const navbarOverlay = document.querySelector(".navbar-overlay");
+      const lineClick = document.querySelector(".nav-right-icon");
+      const lineIcon = document.querySelector(".icon-line");
+      const lineIconUp = document.querySelector(".rotate-up");
+      const lineIconDown = document.querySelector(".rotate-down");
+
+      let circle=true;
+      lineClick.addEventListener("click", ()=>{
+        navbarOverlay.classList.toggle("hidden");
+        if(circle){
+          lineIcon.style.position="absolute";
+          lineIconDown.style.transform="rotate(-45deg)";
+          lineIconUp.style.transform="rotate(45deg)";
+          circle = false;
+        }else if(circle===false){
+          lineIcon.style.position="relative";
+          lineIconDown.style.transform="rotate(0deg)";
+          lineIconUp.style.transform="rotate(0deg)";
+          circle=true;
+        }
+
+      });
+    </script>
+  </body>
+</html>
